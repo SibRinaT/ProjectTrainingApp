@@ -569,7 +569,7 @@ value</string>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.14389349489795908" green="0.011764705882352941" blue="0.26009778911564629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.011764705882352941" green="0.011764705882352941" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="upy-78-w4u" secondAttribute="bottom" id="Cvo-eD-o92"/>
                                     <constraint firstItem="upy-78-w4u" firstAttribute="top" secondItem="GX9-73-5AY" secondAttribute="top" id="OS2-co-igS"/>

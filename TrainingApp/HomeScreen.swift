@@ -14,26 +14,23 @@ class HomeScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        
         let currentDate = Date() // текущее число
-        let currentDay = currentDate.get(Calendar.Component.day)
-        let calendar = Calendar.current
+        var calendar = Calendar.current
+        calendar.firstWeekday = 0
 
-        var weekday = calendar.component(.weekday, from: currentDate) // текущий день недели
-        let monday = currentDay - weekday + 2 // первый день недели
-        let lastDay = monday - 7 // последний день недели
+        let weekday = calendar.component(.weekday, from: currentDate) // текущий день недели
+        let monday = currentDate.startOfWeek() + 1 // первый день недели
 
         var i = 0
         for dayLabel in daysLabels {
-            dayLabel.text = "\(monday + i)"
+            dayLabel.text = "\(monday.get(.day) + i)"
             i += 1
         }
         
-        weekday = 7 // for testing
         var n = 1
         for dayIcon in daysIcons {
-            if weekday == n {
-                dayIcon.image = UIImage(named: "icons8-fire-90")
+            if weekday - 1 == n {
+                dayIcon.image = UIImage(named: "dayFire")
             }
             n += 1
         }
@@ -46,4 +43,9 @@ extension Date {
     func get(_ component: Calendar.Component, calendar: Calendar = Calendar.current) -> Int {
         return calendar.component(component, from: self)
     }
+    
+    func startOfWeek() -> Date {
+        Calendar.current.dateComponents([.calendar, .yearForWeekOfYear, .weekOfYear], from: self).date!
+    }
 }
+
