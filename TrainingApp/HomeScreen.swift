@@ -10,10 +10,22 @@ import UIKit
 class HomeScreen: UIViewController {
     @IBOutlet var daysLabels: [UILabel]!
     @IBOutlet var daysIcons: [UIImageView]!
+    @IBOutlet var daysCirles: [UIView]!
+    @IBOutlet var calendarView: [UIView]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
+        for sides in calendarView {
+            sides.layer.cornerRadius = 10
+            sides.clipsToBounds = true
+        }
+        
+        for circles in daysCirles {
+            circles.layer.cornerRadius =  15
+            circles.clipsToBounds = true
+        }
+        
         let currentDate = Date() // текущее число
         var calendar = Calendar.current
         calendar.firstWeekday = 0
