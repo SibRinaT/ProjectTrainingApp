@@ -470,8 +470,8 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight - Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKe-xl-eKv">
-                                                        <rect key="frame" x="32.999999999999986" y="4.3333333333333428" width="138.66666666666663" height="21"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <rect key="frame" x="32.999999999999986" y="2.3333333333333428" width="137.66666666666663" height="23"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -481,18 +481,17 @@
                                                     <constraint firstItem="bKe-xl-eKv" firstAttribute="leading" secondItem="nhu-dk-exT" secondAttribute="trailing" constant="3" id="6J9-rc-vLe"/>
                                                     <constraint firstAttribute="height" constant="30" id="BxR-4u-RCa"/>
                                                     <constraint firstItem="nhu-dk-exT" firstAttribute="leading" secondItem="G2X-bw-rCn" secondAttribute="leading" id="Q7I-fB-68o"/>
-                                                    <constraint firstItem="bKe-xl-eKv" firstAttribute="top" secondItem="G2X-bw-rCn" secondAttribute="top" constant="4.5" id="Rjd-G0-mQq"/>
                                                     <constraint firstAttribute="bottom" secondItem="bKe-xl-eKv" secondAttribute="bottom" constant="4.5" id="bEL-Iu-Dtb"/>
                                                     <constraint firstAttribute="bottom" secondItem="nhu-dk-exT" secondAttribute="bottom" id="jmH-fG-BwU"/>
                                                     <constraint firstItem="nhu-dk-exT" firstAttribute="top" secondItem="G2X-bw-rCn" secondAttribute="top" id="kMR-eN-CLH"/>
                                                     <constraint firstAttribute="width" constant="172" id="u1v-GE-VnK"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="1000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yI9-sW-8Vp">
-                                                <rect key="frame" x="16.333333333333329" y="46" width="242.33333333333337" height="57"/>
-                                                <string key="text">Enter your height and weight every day to get the most reliable progress!
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="1000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yI9-sW-8Vp">
+                                                <rect key="frame" x="50" y="46" width="175" height="57"/>
+                                                <string key="text"> Enter your height and weight every day to get the most reliable progress!
 </string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <color key="textColor" red="0.66274509803921566" green="0.68627450980392157" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
@@ -515,6 +514,8 @@
                                             </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="yI9-sW-8Vp" firstAttribute="leading" secondItem="upy-78-w4u" secondAttribute="leading" constant="50" id="Wcf-7L-0f3"/>
+                                            <constraint firstAttribute="trailing" secondItem="yI9-sW-8Vp" secondAttribute="trailing" constant="50" id="hkb-3f-IsQ"/>
                                             <constraint firstItem="yI9-sW-8Vp" firstAttribute="centerX" secondItem="upy-78-w4u" secondAttribute="centerX" id="zRA-Rp-9wp"/>
                                         </constraints>
                                         <edgeInsets key="layoutMargins" top="10" left="14" bottom="10" right="14"/>
@@ -529,20 +530,49 @@
                                     <constraint firstAttribute="trailing" secondItem="upy-78-w4u" secondAttribute="trailing" id="utd-Is-XuB"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PTi-3G-9SU">
-                                <rect key="frame" x="50" y="400" width="290" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTi-3G-9SU">
+                                <rect key="frame" x="50" y="400" width="275" height="220"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kLM-bG-esZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="220"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5la-sE-j0R">
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="220"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEf-S7-gd1">
+                                                        <rect key="frame" x="0.0" y="86" width="275" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.062745098039215685" green="0.070588235294117646" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kLM-bG-esZ" secondAttribute="trailing" id="8H2-pD-aVd"/>
+                                    <constraint firstAttribute="height" constant="220" id="Cxt-yR-asv"/>
+                                    <constraint firstAttribute="bottom" secondItem="kLM-bG-esZ" secondAttribute="bottom" id="bdb-we-ruE"/>
+                                    <constraint firstItem="kLM-bG-esZ" firstAttribute="top" secondItem="PTi-3G-9SU" secondAttribute="top" id="cvx-25-Rbu"/>
+                                    <constraint firstItem="kLM-bG-esZ" firstAttribute="leading" secondItem="PTi-3G-9SU" secondAttribute="leading" id="efK-xU-RoU"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.039215686274509803" green="0.043137254901960784" blue="0.047058823529411764" alpha="0.83283319536423839" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="PTi-3G-9SU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="1hc-Md-gNJ"/>
                             <constraint firstItem="GX9-73-5AY" firstAttribute="top" secondItem="Cvl-z0-1cg" secondAttribute="bottom" constant="53" id="HaD-hj-xb5"/>
                             <constraint firstItem="GX9-73-5AY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="LIj-Ma-GvH"/>
                             <constraint firstItem="Cvl-z0-1cg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="WBC-Xh-nYb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cvl-z0-1cg" secondAttribute="trailing" constant="50" id="Yut-iH-kCX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PTi-3G-9SU" secondAttribute="trailing" constant="50" id="i4x-BT-Lqi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GX9-73-5AY" secondAttribute="trailing" constant="50" id="oXe-Vp-jDw"/>
+                            <constraint firstItem="PTi-3G-9SU" firstAttribute="top" secondItem="GX9-73-5AY" secondAttribute="bottom" constant="61.329999999999998" id="rTg-Ud-wtB"/>
                             <constraint firstItem="Cvl-z0-1cg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="xuQ-Iy-N8j"/>
                         </constraints>
                     </view>
@@ -576,7 +606,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.46153846153846" y="66.824644549763036"/>
+            <point key="canvasLocation" x="18.399999999999999" y="66.502463054187189"/>
         </scene>
     </scenes>
     <resources>
