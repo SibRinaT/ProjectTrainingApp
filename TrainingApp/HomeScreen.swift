@@ -9,10 +9,16 @@ import UIKit
 
 class HomeScreen: UIViewController {
     @IBOutlet var daysLabels: [UILabel]!
-    @IBOutlet var daysIcons: [UIImageView]!
+
     @IBOutlet var daysCirles: [UIView]!
     @IBOutlet var calendarView: [UIView]!
-
+    @IBOutlet var graphicView: [UIView]!
+    @IBOutlet var weightHeightView: [UIView]!
+    
+    @IBOutlet var daysIcons: [UIImageView]!
+    
+    @IBOutlet var weightHeighButton: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +51,21 @@ class HomeScreen: UIViewController {
                 dayIcon.image = UIImage(named: "dayFire")
             }
             n += 1
+        }
+        
+        for sides in graphicView {
+            sides.layer.cornerRadius = 16
+            sides.clipsToBounds = true
+        }
+        
+        for sides in weightHeightView {
+            sides.layer.cornerRadius = 16
+            sides.clipsToBounds = true
+        }
+        
+        for sides in weightHeighButton {
+            sides.layer.cornerRadius = 16
+            sides.clipsToBounds = true
         }
         // Do any additional setup after loading the view.
     }
