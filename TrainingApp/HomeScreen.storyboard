@@ -488,10 +488,10 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="1000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yI9-sW-8Vp">
-                                                <rect key="frame" x="50" y="46" width="214" height="57"/>
+                                                <rect key="frame" x="14.333333333333343" y="46" width="285.66666666666663" height="57"/>
                                                 <string key="text"> Enter your height and weight every day to get the most reliable progress!
 </string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" red="0.66274509803921566" green="0.68627450980392157" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
@@ -514,8 +514,6 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="yI9-sW-8Vp" firstAttribute="leading" secondItem="upy-78-w4u" secondAttribute="leading" constant="50" id="Wcf-7L-0f3"/>
-                                            <constraint firstAttribute="trailing" secondItem="yI9-sW-8Vp" secondAttribute="trailing" constant="50" id="hkb-3f-IsQ"/>
                                             <constraint firstItem="yI9-sW-8Vp" firstAttribute="centerX" secondItem="upy-78-w4u" secondAttribute="centerX" id="zRA-Rp-9wp"/>
                                         </constraints>
                                         <edgeInsets key="layoutMargins" top="10" left="14" bottom="10" right="14"/>
@@ -539,7 +537,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPG-YZ-LPi">
                                                 <rect key="frame" x="72.666666666666686" y="0.0" width="169" height="50"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scale" translatesAutoresizingMaskIntoConstraints="NO" id="ETu-Dk-o6h">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="progressIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ETu-Dk-o6h">
                                                         <rect key="frame" x="0.0" y="10" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ETu-Dk-o6h" secondAttribute="height" multiplier="1:1" id="8qe-oV-TbP"/>
@@ -589,7 +587,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S77-cx-wvE">
                                                 <rect key="frame" x="62" y="10" width="190" height="35"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scale" translatesAutoresizingMaskIntoConstraints="NO" id="F8w-A8-Tkz">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="challengeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="F8w-A8-Tkz">
                                                         <rect key="frame" x="3" y="1" width="33" height="33"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="F8w-A8-Tkz" secondAttribute="height" multiplier="1:1" id="GAr-aw-V4m"/>
@@ -635,6 +633,7 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="163" id="88g-ny-1sp"/>
+                                            <constraint firstItem="hQY-wG-gec" firstAttribute="centerX" secondItem="CAr-cE-ipe" secondAttribute="centerX" id="T7C-eX-S43"/>
                                         </constraints>
                                         <edgeInsets key="layoutMargins" top="10" left="14" bottom="10" right="14"/>
                                     </stackView>
@@ -691,6 +690,8 @@
                         <outletCollection property="graphicView" destination="PTi-3G-9SU" collectionClass="NSMutableArray" id="UVZ-3k-LiO"/>
                         <outletCollection property="weightHeightView" destination="GX9-73-5AY" collectionClass="NSMutableArray" id="FLz-7C-Sge"/>
                         <outletCollection property="weightHeighButton" destination="yMU-1l-2A0" collectionClass="NSMutableArray" id="26S-Jt-qFH"/>
+                        <outletCollection property="challengeButton" destination="rEp-8J-foH" collectionClass="NSMutableArray" id="1QD-1l-Lvu"/>
+                        <outletCollection property="challengeView" destination="0sM-TS-3fn" collectionClass="NSMutableArray" id="zMW-32-wRS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -699,7 +700,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="challengeIcon" width="90" height="90"/>
         <image name="kg" width="24" height="27"/>
+        <image name="progressIcon" width="58" height="58"/>
         <image name="scale" width="100" height="100"/>
     </resources>
 </document>

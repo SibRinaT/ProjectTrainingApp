@@ -14,10 +14,12 @@ class HomeScreen: UIViewController {
     @IBOutlet var calendarView: [UIView]!
     @IBOutlet var graphicView: [UIView]!
     @IBOutlet var weightHeightView: [UIView]!
+    @IBOutlet var challengeView: [UIView]!
     
     @IBOutlet var daysIcons: [UIImageView]!
     
     @IBOutlet var weightHeighButton: [UIButton]!
+    @IBOutlet var challengeButton: [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,6 +69,18 @@ class HomeScreen: UIViewController {
             sides.layer.cornerRadius = 16
             sides.clipsToBounds = true
         }
+        
+        for sides in challengeButton {
+            sides.layer.cornerRadius = 16
+            sides.clipsToBounds = true
+        }
+        
+        for sides in challengeView {
+            sides.layer.cornerRadius = 16
+            sides.clipsToBounds = true
+        }
+        
+        
         // Do any additional setup after loading the view.
     }
 
