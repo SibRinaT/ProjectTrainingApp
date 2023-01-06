@@ -31,7 +31,6 @@ class HomeScreen: UIViewController {
         
         for circles in daysCirles {
             circles.layer.cornerRadius =  15
-            circles.clipsToBounds = true
         }
         
         let currentDate = Date() // текущее число
