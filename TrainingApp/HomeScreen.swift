@@ -40,7 +40,7 @@ class HomeScreen: UIViewController {
         let weekday = calendar.component(.weekday, from: currentDate) // текущий день недели
         let monday = currentDate.startOfWeek() + 1 // первый день недели
 
-        var i = 0
+        var i = 1
         for dayLabel in daysLabels {
             dayLabel.text = "\(monday.get(.day) + i)"
             i += 1
