@@ -23,16 +23,7 @@ class HomeScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        for sides in calendarView {
-            sides.layer.cornerRadius = 10
-            sides.clipsToBounds = true
-        }
-        
-        for circles in daysCirles {
-            circles.layer.cornerRadius =  15
-        }
-        
+                
         let currentDate = Date() // текущее число
         var calendar = Calendar.current
         calendar.firstWeekday = 0
@@ -52,6 +43,20 @@ class HomeScreen: UIViewController {
                 dayIcon.image = UIImage(named: "dayFire")
             }
             n += 1
+        }
+    
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        for sides in calendarView {
+            sides.layer.cornerRadius = 10
+            sides.clipsToBounds = true
+        }
+        
+        for circles in daysCirles {
+            circles.layer.cornerRadius = circles.frame.size.width / 2
         }
         
         for sides in graphicView {
@@ -78,10 +83,9 @@ class HomeScreen: UIViewController {
             sides.layer.cornerRadius = 16
             sides.clipsToBounds = true
         }
-        
-        
-        // Do any additional setup after loading the view.
     }
+    
+
 
 }
 
