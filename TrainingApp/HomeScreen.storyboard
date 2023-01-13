@@ -739,7 +739,7 @@
                         <viewLayoutGuide key="safeArea" id="Ntd-l2-abd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Training" selectedImage="trainingIcon" id="idg-Cc-qON"/>
+                    <tabBarItem key="tabBarItem" title="Training" image="trainingIcon" id="idg-Cc-qON"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ey-Wd-bYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
