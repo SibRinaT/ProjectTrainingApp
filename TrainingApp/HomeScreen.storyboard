@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZWo-Lj-NSZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZWo-Lj-NSZ">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home Screen-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeScreen" customModule="TrainingApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,10 +19,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="DjU-ji-ujF">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="691"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="735"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cvl-z0-1cg">
-                                                <rect key="frame" x="16" y="0.0" width="396" height="100"/>
+                                                <rect key="frame" x="16" y="44" width="396" height="100"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="X9k-kg-WEy">
                                                         <rect key="frame" x="23.666666666666657" y="5" width="349" height="90"/>
@@ -42,10 +40,10 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0I-Gg-9VO">
-                                                                                <rect key="frame" x="0.0" y="22.333333333333339" width="45" height="51.666666666666657"/>
+                                                                                <rect key="frame" x="0.0" y="22.333333333333325" width="45" height="51.666666666666657"/>
                                                                                 <subviews>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xf3-lP-oAy">
-                                                                                        <rect key="frame" x="0.0" y="6.6666666666666643" width="45" height="45"/>
+                                                                                        <rect key="frame" x="0.0" y="6.6666666666666714" width="45" height="45"/>
                                                                                         <subviews>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kg" translatesAutoresizingMaskIntoConstraints="NO" id="5iM-qy-hPg">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -103,10 +101,10 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1k9-1y-Rhx">
-                                                                                <rect key="frame" x="0.0" y="22.333333333333339" width="45" height="51.666666666666657"/>
+                                                                                <rect key="frame" x="0.0" y="22.333333333333325" width="45" height="51.666666666666657"/>
                                                                                 <subviews>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBc-0i-Akg">
-                                                                                        <rect key="frame" x="0.0" y="6.6666666666666643" width="45" height="45"/>
+                                                                                        <rect key="frame" x="0.0" y="6.6666666666666714" width="45" height="45"/>
                                                                                         <subviews>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kg" translatesAutoresizingMaskIntoConstraints="NO" id="8Of-nm-1AB">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -164,10 +162,10 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agV-ah-wDo">
-                                                                                <rect key="frame" x="0.0" y="22.333333333333339" width="45" height="51.666666666666657"/>
+                                                                                <rect key="frame" x="0.0" y="22.333333333333325" width="45" height="51.666666666666657"/>
                                                                                 <subviews>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBt-hD-duC">
-                                                                                        <rect key="frame" x="0.0" y="6.6666666666666643" width="45" height="45"/>
+                                                                                        <rect key="frame" x="0.0" y="6.6666666666666714" width="45" height="45"/>
                                                                                         <subviews>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kg" translatesAutoresizingMaskIntoConstraints="NO" id="xTG-l0-Zhd">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -225,10 +223,10 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0q-mX-S3V">
-                                                                                <rect key="frame" x="0.0" y="22.333333333333339" width="45" height="51.666666666666657"/>
+                                                                                <rect key="frame" x="0.0" y="22.333333333333325" width="45" height="51.666666666666657"/>
                                                                                 <subviews>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Lo-Ch-bvO">
-                                                                                        <rect key="frame" x="0.0" y="6.6666666666666643" width="45" height="45"/>
+                                                                                        <rect key="frame" x="0.0" y="6.6666666666666714" width="45" height="45"/>
                                                                                         <subviews>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kg" translatesAutoresizingMaskIntoConstraints="NO" id="DNk-Xi-3iE">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -286,10 +284,10 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9U-Vi-Cwt">
-                                                                                <rect key="frame" x="0.0" y="22.333333333333339" width="45" height="51.666666666666657"/>
+                                                                                <rect key="frame" x="0.0" y="22.333333333333325" width="45" height="51.666666666666657"/>
                                                                                 <subviews>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lB-2n-sbi">
-                                                                                        <rect key="frame" x="0.0" y="6.6666666666666643" width="45" height="45"/>
+                                                                                        <rect key="frame" x="0.0" y="6.6666666666666714" width="45" height="45"/>
                                                                                         <subviews>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kg" translatesAutoresizingMaskIntoConstraints="NO" id="1Ex-kd-vfQ">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -347,10 +345,10 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vk-WE-DBZ">
-                                                                                <rect key="frame" x="0.0" y="22.333333333333339" width="45" height="51.666666666666657"/>
+                                                                                <rect key="frame" x="0.0" y="22.333333333333325" width="45" height="51.666666666666657"/>
                                                                                 <subviews>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pjc-Gp-yfR">
-                                                                                        <rect key="frame" x="0.0" y="6.6666666666666643" width="45" height="45"/>
+                                                                                        <rect key="frame" x="0.0" y="6.6666666666666714" width="45" height="45"/>
                                                                                         <subviews>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kg" translatesAutoresizingMaskIntoConstraints="NO" id="zFd-z6-OyO">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -408,10 +406,10 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B2j-nW-2rK">
-                                                                                <rect key="frame" x="0.0" y="22.333333333333339" width="45" height="51.666666666666657"/>
+                                                                                <rect key="frame" x="0.0" y="22.333333333333325" width="45" height="51.666666666666657"/>
                                                                                 <subviews>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lan-6K-YCn">
-                                                                                        <rect key="frame" x="0.0" y="6.6666666666666643" width="45" height="45"/>
+                                                                                        <rect key="frame" x="0.0" y="6.6666666666666714" width="45" height="45"/>
                                                                                         <subviews>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kg" translatesAutoresizingMaskIntoConstraints="NO" id="3nt-CO-eBD">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -457,10 +455,10 @@
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" name="AccentColor"/>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
                                                 </subviews>
+                                                <color key="backgroundColor" red="0.29803922770000002" green="0.61960786580000005" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="X9k-kg-WEy" secondAttribute="bottom" constant="5" id="9ow-nP-ucF"/>
                                                     <constraint firstItem="X9k-kg-WEy" firstAttribute="centerX" secondItem="Cvl-z0-1cg" secondAttribute="centerX" id="fzl-04-dqk"/>
@@ -469,7 +467,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GX9-73-5AY">
-                                                <rect key="frame" x="16" y="116" width="396" height="160"/>
+                                                <rect key="frame" x="16" y="160" width="396" height="160"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="upy-78-w4u">
                                                         <rect key="frame" x="0.0" y="0.0" width="396" height="160"/>
@@ -543,7 +541,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTi-3G-9SU">
-                                                <rect key="frame" x="16" y="292" width="396" height="220"/>
+                                                <rect key="frame" x="16" y="336" width="396" height="220"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="s71-tI-Fu1">
                                                         <rect key="frame" x="0.0" y="0.0" width="396" height="220"/>
@@ -593,7 +591,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sM-TS-3fn">
-                                                <rect key="frame" x="16" y="528" width="396" height="163"/>
+                                                <rect key="frame" x="16" y="572" width="396" height="163"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="CAr-cE-ipe">
                                                         <rect key="frame" x="0.0" y="0.0" width="396" height="163"/>
@@ -684,68 +682,43 @@
                             <constraint firstAttribute="bottom" secondItem="hlQ-74-6Kp" secondAttribute="bottom" id="pb9-s9-fHR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="J4R-tc-9OB">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="zUy-Xk-JvU">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zUf-8b-jnP">
-                                <rect key="frame" x="330" y="0.0" width="78" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="gear" catalog="system"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="lcU-DS-jYa">
+                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="J4R-tc-9OB"/>
                     <connections>
-                        <outletCollection property="daysLabels" destination="xgJ-xW-4ZI" collectionClass="NSMutableArray" id="eWg-ab-9BS"/>
-                        <outletCollection property="daysIcons" destination="5iM-qy-hPg" collectionClass="NSMutableArray" id="dUp-dP-OWr"/>
-                        <outletCollection property="daysIcons" destination="1Ex-kd-vfQ" collectionClass="NSMutableArray" id="3k6-lQ-k46"/>
                         <outletCollection property="daysCirles" destination="jBt-hD-duC" collectionClass="NSMutableArray" id="qGK-hg-mds"/>
                         <outletCollection property="daysCirles" destination="4lB-2n-sbi" collectionClass="NSMutableArray" id="TJs-MJ-94C"/>
                         <outletCollection property="challengeButton" destination="rEp-8J-foH" collectionClass="NSMutableArray" id="1QD-1l-Lvu"/>
                         <outletCollection property="weightHeighButton" destination="yMU-1l-2A0" collectionClass="NSMutableArray" id="26S-Jt-qFH"/>
-                        <outletCollection property="daysLabels" destination="xzt-Dq-Gtd" collectionClass="NSMutableArray" id="fbW-vp-fvH"/>
-                        <outletCollection property="daysLabels" destination="dwa-Dr-otI" collectionClass="NSMutableArray" id="Pbo-5v-9pi"/>
-                        <outletCollection property="daysLabels" destination="FBp-BD-7Va" collectionClass="NSMutableArray" id="aur-3M-u3Y"/>
-                        <outletCollection property="daysLabels" destination="pTj-mg-tHb" collectionClass="NSMutableArray" id="6BZ-AC-efA"/>
-                        <outletCollection property="daysIcons" destination="8Of-nm-1AB" collectionClass="NSMutableArray" id="zXa-eA-WPI"/>
                         <outletCollection property="calendarView" destination="Cvl-z0-1cg" collectionClass="NSMutableArray" id="BGP-VB-Ffp"/>
                         <outletCollection property="daysCirles" destination="Xf3-lP-oAy" collectionClass="NSMutableArray" id="IzK-DV-rWm"/>
                         <outletCollection property="daysCirles" destination="Pjc-Gp-yfR" collectionClass="NSMutableArray" id="ofT-WN-kpq"/>
                         <outletCollection property="weightHeightView" destination="GX9-73-5AY" collectionClass="NSMutableArray" id="FLz-7C-Sge"/>
-                        <outletCollection property="daysIcons" destination="DNk-Xi-3iE" collectionClass="NSMutableArray" id="htY-kO-4eU"/>
                         <outletCollection property="daysCirles" destination="Lan-6K-YCn" collectionClass="NSMutableArray" id="iUb-3r-hpw"/>
-                        <outletCollection property="daysIcons" destination="zFd-z6-OyO" collectionClass="NSMutableArray" id="P6b-d2-xgi"/>
-                        <outletCollection property="daysLabels" destination="GUJ-8Z-cKR" collectionClass="NSMutableArray" id="bc9-td-lZd"/>
-                        <outletCollection property="daysLabels" destination="OwA-6W-btX" collectionClass="NSMutableArray" id="lfl-ti-PjR"/>
                         <outletCollection property="challengeView" destination="0sM-TS-3fn" collectionClass="NSMutableArray" id="zMW-32-wRS"/>
                         <outletCollection property="daysCirles" destination="7Lo-Ch-bvO" collectionClass="NSMutableArray" id="Res-uM-61r"/>
                         <outletCollection property="daysCirles" destination="NBc-0i-Akg" collectionClass="NSMutableArray" id="hNI-pA-8LW"/>
-                        <outletCollection property="daysIcons" destination="xTG-l0-Zhd" collectionClass="NSMutableArray" id="jtO-9Z-x2p"/>
-                        <outletCollection property="daysIcons" destination="3nt-CO-eBD" collectionClass="NSMutableArray" id="fnz-Vw-jfq"/>
                         <outletCollection property="graphicView" destination="PTi-3G-9SU" collectionClass="NSMutableArray" id="UVZ-3k-LiO"/>
+                        <outletCollection property="daysIcons" destination="5iM-qy-hPg" collectionClass="NSMutableArray" id="cIj-Qa-H4M"/>
+                        <outletCollection property="daysIcons" destination="8Of-nm-1AB" collectionClass="NSMutableArray" id="r1A-yn-ocD"/>
+                        <outletCollection property="daysIcons" destination="xTG-l0-Zhd" collectionClass="NSMutableArray" id="WSD-Nb-SGp"/>
+                        <outletCollection property="daysIcons" destination="DNk-Xi-3iE" collectionClass="NSMutableArray" id="IMZ-3q-5rV"/>
+                        <outletCollection property="daysIcons" destination="1Ex-kd-vfQ" collectionClass="NSMutableArray" id="LoC-jI-uPY"/>
+                        <outletCollection property="daysIcons" destination="zFd-z6-OyO" collectionClass="NSMutableArray" id="Pab-c7-Svc"/>
+                        <outletCollection property="daysIcons" destination="3nt-CO-eBD" collectionClass="NSMutableArray" id="qPZ-18-D1e"/>
+                        <outletCollection property="daysLabels" destination="xgJ-xW-4ZI" collectionClass="NSMutableArray" id="kAk-JZ-g4R"/>
+                        <outletCollection property="daysLabels" destination="xzt-Dq-Gtd" collectionClass="NSMutableArray" id="kPW-Me-ORG"/>
+                        <outletCollection property="daysLabels" destination="FBp-BD-7Va" collectionClass="NSMutableArray" id="U1x-c2-aAe"/>
+                        <outletCollection property="daysLabels" destination="dwa-Dr-otI" collectionClass="NSMutableArray" id="SDg-jt-Y9D"/>
+                        <outletCollection property="daysLabels" destination="OwA-6W-btX" collectionClass="NSMutableArray" id="3tt-lM-ZiA"/>
+                        <outletCollection property="daysLabels" destination="pTj-mg-tHb" collectionClass="NSMutableArray" id="Xsh-ip-Tib"/>
+                        <outletCollection property="daysLabels" destination="GUJ-8Z-cKR" collectionClass="NSMutableArray" id="dCd-jb-GOx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836.2318840579712" y="65.625"/>
-        </scene>
-        <!--Home-->
-        <scene sceneID="GoV-5M-Cv2">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YUF-Bt-Vdq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="IRj-8l-vkK"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M3q-DJ-cNt">
-                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OKD-x8-6wI"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="adj-CO-8OV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="926.08695652173924" y="65.625"/>
+            <point key="canvasLocation" x="1002" y="65"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ll5-Zc-iRA">
@@ -753,11 +726,14 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ZWo-Lj-NSZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9rb-UK-Iaq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="YUF-Bt-Vdq" kind="relationship" relationship="viewControllers" id="lEW-8k-7O0"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Vgq-G7-8w7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LjJ-b1-rbb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -767,12 +743,9 @@
     </scenes>
     <resources>
         <image name="challengeIcon" width="90" height="90"/>
-        <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="kg" width="24" height="27"/>
         <image name="progressIcon" width="58" height="58"/>
-        <image name="scale" width="100" height="100"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <image name="scale" width="96" height="96"/>
     </resources>
 </document>

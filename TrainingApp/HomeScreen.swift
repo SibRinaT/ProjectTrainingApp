@@ -31,7 +31,7 @@ class HomeScreen: UIViewController {
         let weekday = calendar.component(.weekday, from: currentDate) // текущий день недели
         let monday = currentDate.startOfWeek() + 1 // первый день недели
 
-        var i = 1
+        var i = 0
         for dayLabel in daysLabels {
             dayLabel.text = "\(monday.get(.day) + i)"
             i += 1
@@ -44,14 +44,14 @@ class HomeScreen: UIViewController {
             }
             n += 1
         }
-    
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         for sides in calendarView {
-            sides.layer.cornerRadius = 10
+            sides.layer.cornerRadius = 16
             sides.clipsToBounds = true
         }
         
