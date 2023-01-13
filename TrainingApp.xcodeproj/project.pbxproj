@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E304B772942534A00CF972F /* MerriweatherSans-forAllText.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E304B762942534A00CF972F /* MerriweatherSans-forAllText.ttf */; };
 		2E32DF71292277B60018E44C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32DF70292277B60018E44C /* AppDelegate.swift */; };
 		2E32DF73292277B60018E44C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32DF72292277B60018E44C /* SceneDelegate.swift */; };
 		2E32DF75292277B60018E44C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32DF74292277B60018E44C /* HomeScreen.swift */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E304B762942534A00CF972F /* MerriweatherSans-forAllText.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MerriweatherSans-forAllText.ttf"; sourceTree = "<group>"; };
 		2E32DF6D292277B60018E44C /* TrainingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E32DF70292277B60018E44C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E32DF72292277B60018E44C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,14 +39,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E304B75294251BB00CF972F /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				2E304B762942534A00CF972F /* MerriweatherSans-forAllText.ttf */,
-			);
-			path = fonts;
-			sourceTree = "<group>";
-		};
 		2E32DF64292277B60018E44C = {
 			isa = PBXGroup;
 			children = (
@@ -68,7 +58,6 @@
 		2E32DF6F292277B60018E44C /* TrainingApp */ = {
 			isa = PBXGroup;
 			children = (
-				2E304B75294251BB00CF972F /* fonts */,
 				2E32DF70292277B60018E44C /* AppDelegate.swift */,
 				2E32DF72292277B60018E44C /* SceneDelegate.swift */,
 				2E32DF74292277B60018E44C /* HomeScreen.swift */,
@@ -143,7 +132,6 @@
 				2EC5261A292E991E00CCD801 /* HomeScreen.storyboard in Resources */,
 				2EC52628292EA4C000CCD801 /* Assets.xcassets in Resources */,
 				2E32DF78292277B60018E44C /* Main.storyboard in Resources */,
-				2E304B772942534A00CF972F /* MerriweatherSans-forAllText.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
