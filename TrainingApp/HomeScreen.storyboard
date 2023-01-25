@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -732,11 +733,43 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="926"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XDM-bl-U11">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="926"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <stackView opaque="NO" contentMode="center" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="XDM-bl-U11">
+                                        <rect key="frame" x="30" y="16" width="360" height="546"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDV-2h-TRj">
+                                                <rect key="frame" x="0.0" y="0.0" width="360" height="180"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="180" id="VH9-fy-77z"/>
+                                                    <constraint firstAttribute="width" constant="360" id="cfu-Nv-FbN"/>
+                                                </constraints>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izM-LR-KpT">
+                                                <rect key="frame" x="0.0" y="183" width="360" height="180"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="360" id="U5I-iI-YV1"/>
+                                                    <constraint firstAttribute="height" constant="180" id="Uv3-h6-jMm"/>
+                                                </constraints>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oio-Hi-JVA">
+                                                <rect key="frame" x="0.0" y="366" width="360" height="180"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="180" id="iZR-v2-Of9"/>
+                                                    <constraint firstAttribute="width" constant="360" id="kDU-IR-fMf"/>
+                                                </constraints>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                            </view>
+                                        </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="nf2-xr-RUy" firstAttribute="trailing" secondItem="XDM-bl-U11" secondAttribute="trailing" constant="24" id="6v2-bd-eax"/>
+                                    <constraint firstItem="XDM-bl-U11" firstAttribute="top" secondItem="nf2-xr-RUy" secondAttribute="top" constant="16" id="LRn-3i-DaU"/>
+                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="f7m-xy-FKn"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="nf2-xr-RUy"/>
                             </scrollView>
@@ -789,5 +822,8 @@
         <image name="progressIcon" width="90" height="90"/>
         <image name="scale" width="96" height="96"/>
         <image name="trainingIcon" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
