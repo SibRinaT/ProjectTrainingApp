@@ -729,53 +729,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeq-G8-HNu">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="926"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avd-ai-zS2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="center" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="XDM-bl-U11">
-                                        <rect key="frame" x="30" y="16" width="360" height="546"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mum-Cl-cFm">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDV-2h-TRj">
-                                                <rect key="frame" x="0.0" y="0.0" width="360" height="180"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfv-0m-42P">
+                                                <rect key="frame" x="16" y="0.0" width="382" height="180"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4xE-Sf-zjm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="180"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Begginer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJR-LF-Iaj">
+                                                        <rect key="frame" x="275.66666666666669" y="10" width="46.333333333333314" height="14.333333333333336"/>
+                                                        <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="12"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6xY-G0-vux">
+                                                        <rect key="frame" x="276" y="29" width="45" height="10"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcv-67-fGk">
+                                                                <rect key="frame" x="0.0" y="0.0" width="45" height="10"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </stackView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fby-F3-54M">
+                                                                <rect key="frame" x="14" y="-1" width="17" height="12"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="180" id="VH9-fy-77z"/>
-                                                    <constraint firstAttribute="width" constant="360" id="cfu-Nv-FbN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ZJR-LF-Iaj" secondAttribute="trailing" constant="60" id="5xi-CC-3ah"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4xE-Sf-zjm" secondAttribute="trailing" id="7yh-r4-A0w"/>
+                                                    <constraint firstItem="4xE-Sf-zjm" firstAttribute="top" secondItem="yfv-0m-42P" secondAttribute="top" id="914-ac-Fcl"/>
+                                                    <constraint firstAttribute="bottom" secondItem="4xE-Sf-zjm" secondAttribute="bottom" id="U5i-C8-EbV"/>
+                                                    <constraint firstItem="4xE-Sf-zjm" firstAttribute="leading" secondItem="yfv-0m-42P" secondAttribute="leading" id="gd8-Ap-AAs"/>
+                                                    <constraint firstItem="ZJR-LF-Iaj" firstAttribute="top" secondItem="yfv-0m-42P" secondAttribute="top" constant="10" id="lXi-pv-rqf"/>
+                                                    <constraint firstAttribute="height" constant="180" id="okd-mr-obs"/>
                                                 </constraints>
-                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izM-LR-KpT">
-                                                <rect key="frame" x="0.0" y="183" width="360" height="180"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="360" id="U5I-iI-YV1"/>
-                                                    <constraint firstAttribute="height" constant="180" id="Uv3-h6-jMm"/>
-                                                </constraints>
-                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oio-Hi-JVA">
-                                                <rect key="frame" x="0.0" y="366" width="360" height="180"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="180" id="iZR-v2-Of9"/>
-                                                    <constraint firstAttribute="width" constant="360" id="kDU-IR-fMf"/>
-                                                </constraints>
-                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                             </view>
                                         </subviews>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="nf2-xr-RUy" firstAttribute="trailing" secondItem="XDM-bl-U11" secondAttribute="trailing" constant="24" id="6v2-bd-eax"/>
-                                    <constraint firstItem="XDM-bl-U11" firstAttribute="top" secondItem="nf2-xr-RUy" secondAttribute="top" constant="16" id="LRn-3i-DaU"/>
+                                    <constraint firstItem="mum-Cl-cFm" firstAttribute="top" secondItem="2qW-x7-R7K" secondAttribute="top" id="6KC-g6-lBt"/>
+                                    <constraint firstItem="mum-Cl-cFm" firstAttribute="leading" secondItem="2qW-x7-R7K" secondAttribute="leading" id="ery-Dj-8Ed"/>
+                                    <constraint firstItem="mum-Cl-cFm" firstAttribute="width" secondItem="XAI-eA-1dW" secondAttribute="width" id="pHb-z9-cmf"/>
+                                    <constraint firstItem="mum-Cl-cFm" firstAttribute="trailing" secondItem="2qW-x7-R7K" secondAttribute="trailing" id="r0r-qL-Q10"/>
+                                    <constraint firstItem="mum-Cl-cFm" firstAttribute="bottom" secondItem="2qW-x7-R7K" secondAttribute="bottom" id="rOK-Yy-7gM"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="f7m-xy-FKn"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="nf2-xr-RUy"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="2qW-x7-R7K"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="XAI-eA-1dW"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ntd-l2-abd"/>
                         <color key="backgroundColor" red="0.039215686274509803" green="0.043137254901960784" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="avd-ai-zS2" firstAttribute="leading" secondItem="Ntd-l2-abd" secondAttribute="leading" id="12Y-cK-3lv"/>
+                            <constraint firstItem="Ntd-l2-abd" firstAttribute="bottom" secondItem="avd-ai-zS2" secondAttribute="bottom" id="BJk-2a-yOG"/>
+                            <constraint firstItem="avd-ai-zS2" firstAttribute="top" secondItem="Ntd-l2-abd" secondAttribute="top" id="e9I-GD-CXu"/>
+                            <constraint firstItem="Ntd-l2-abd" firstAttribute="trailing" secondItem="avd-ai-zS2" secondAttribute="trailing" id="l2w-mA-E10"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Training" image="trainingIcon" id="idg-Cc-qON"/>
                 </viewController>
@@ -816,6 +837,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="beginerIcon" width="1920" height="1080"/>
         <image name="challengeIcon" width="96" height="96"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="kg" width="24" height="27"/>
