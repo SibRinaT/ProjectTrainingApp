@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -729,52 +728,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avd-ai-zS2">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avd-ai-zS2">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mum-Cl-cFm">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mum-Cl-cFm">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfv-0m-42P">
-                                                <rect key="frame" x="16" y="0.0" width="382" height="180"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4xE-Sf-zjm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="180"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Begginer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJR-LF-Iaj">
-                                                        <rect key="frame" x="275.66666666666669" y="10" width="46.333333333333314" height="14.333333333333336"/>
-                                                        <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="12"/>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6xY-G0-vux">
-                                                        <rect key="frame" x="276" y="29" width="45" height="10"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcv-67-fGk">
-                                                                <rect key="frame" x="0.0" y="0.0" width="45" height="10"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            </stackView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fby-F3-54M">
-                                                                <rect key="frame" x="14" y="-1" width="17" height="12"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            </imageView>
-                                                        </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    </view>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="ZJR-LF-Iaj" secondAttribute="trailing" constant="60" id="5xi-CC-3ah"/>
-                                                    <constraint firstAttribute="trailing" secondItem="4xE-Sf-zjm" secondAttribute="trailing" id="7yh-r4-A0w"/>
-                                                    <constraint firstItem="4xE-Sf-zjm" firstAttribute="top" secondItem="yfv-0m-42P" secondAttribute="top" id="914-ac-Fcl"/>
-                                                    <constraint firstAttribute="bottom" secondItem="4xE-Sf-zjm" secondAttribute="bottom" id="U5i-C8-EbV"/>
-                                                    <constraint firstItem="4xE-Sf-zjm" firstAttribute="leading" secondItem="yfv-0m-42P" secondAttribute="leading" id="gd8-Ap-AAs"/>
-                                                    <constraint firstItem="ZJR-LF-Iaj" firstAttribute="top" secondItem="yfv-0m-42P" secondAttribute="top" constant="10" id="lXi-pv-rqf"/>
-                                                    <constraint firstAttribute="height" constant="180" id="okd-mr-obs"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
                                         <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
                                     </stackView>
                                 </subviews>
@@ -837,15 +795,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="beginerIcon" width="1920" height="1080"/>
         <image name="challengeIcon" width="96" height="96"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="kg" width="24" height="27"/>
         <image name="progressIcon" width="90" height="90"/>
         <image name="scale" width="96" height="96"/>
         <image name="trainingIcon" width="30" height="30"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
