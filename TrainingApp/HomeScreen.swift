@@ -84,9 +84,6 @@ class HomeScreen: UIViewController {
             sides.clipsToBounds = true
         }
     }
-    
-
-
 }
 
 extension Date {

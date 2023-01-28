@@ -723,16 +723,78 @@
         <!--Training-->
         <scene sceneID="lWB-kk-5RO">
             <objects>
-                <viewController id="aYo-g4-CKh" sceneMemberID="viewController">
+                <viewController id="aYo-g4-CKh" customClass="TrainingScreen" customModule="TrainingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tvC-ii-spV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avd-ai-zS2">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avd-ai-zS2">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mum-Cl-cFm">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mum-Cl-cFm">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfv-0m-42P">
+                                                <rect key="frame" x="16" y="0.0" width="382" height="180"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4xE-Sf-zjm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="180"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beginner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJR-LF-Iaj">
+                                                        <rect key="frame" x="277.66666666666669" y="8.0000000000000018" width="69.333333333333314" height="21.666666666666671"/>
+                                                        <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="18"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xY-G0-vux">
+                                                        <rect key="frame" x="302" y="31.333333333333329" width="45" height="12"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lightningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Fby-F3-54M">
+                                                                <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-lightning-bolt-64-3" translatesAutoresizingMaskIntoConstraints="NO" id="NDh-Gj-xLn">
+                                                                <rect key="frame" x="16" y="0.0" width="12" height="12"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-lightning-bolt-64-3" translatesAutoresizingMaskIntoConstraints="NO" id="Cge-hH-Nat">
+                                                                <rect key="frame" x="33" y="0.0" width="12" height="12"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="45" id="1JH-xc-JYc"/>
+                                                            <constraint firstAttribute="height" constant="12" id="ZAU-xZ-86d"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light exercise. Ideal for beginner athletes." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRC-4q-h3w">
+                                                        <rect key="frame" x="196" y="132" width="166" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="0Lw-qK-eHw"/>
+                                                            <constraint firstAttribute="width" constant="166" id="b3j-TL-Mtl"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="ZJR-LF-Iaj" secondAttribute="trailing" constant="35" id="5xi-CC-3ah"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sRC-4q-h3w" secondAttribute="bottom" constant="8" id="6mU-Sd-Cru"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4xE-Sf-zjm" secondAttribute="trailing" id="7yh-r4-A0w"/>
+                                                    <constraint firstItem="4xE-Sf-zjm" firstAttribute="top" secondItem="yfv-0m-42P" secondAttribute="top" id="914-ac-Fcl"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6xY-G0-vux" secondAttribute="trailing" constant="35" id="B4k-Pw-a4W"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sRC-4q-h3w" secondAttribute="trailing" constant="20" id="EBa-y8-Fzm"/>
+                                                    <constraint firstAttribute="bottom" secondItem="4xE-Sf-zjm" secondAttribute="bottom" id="U5i-C8-EbV"/>
+                                                    <constraint firstItem="6xY-G0-vux" firstAttribute="top" secondItem="ZJR-LF-Iaj" secondAttribute="bottom" constant="1.6699999999999999" id="eOe-Dy-zkw"/>
+                                                    <constraint firstItem="4xE-Sf-zjm" firstAttribute="leading" secondItem="yfv-0m-42P" secondAttribute="leading" id="gd8-Ap-AAs"/>
+                                                    <constraint firstItem="ZJR-LF-Iaj" firstAttribute="top" secondItem="yfv-0m-42P" secondAttribute="top" constant="8" id="lXi-pv-rqf"/>
+                                                    <constraint firstAttribute="height" constant="180" id="okd-mr-obs"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
                                         <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
                                     </stackView>
                                 </subviews>
@@ -757,6 +819,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Training" image="trainingIcon" id="idg-Cc-qON"/>
+                    <connections>
+                        <outletCollection property="beginnerView" destination="4xE-Sf-zjm" collectionClass="NSMutableArray" id="l2U-HX-7G0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ey-Wd-bYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -795,9 +860,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="beginerIcon" width="1920" height="1080"/>
         <image name="challengeIcon" width="96" height="96"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="icons8-lightning-bolt-64-3" width="64" height="64"/>
         <image name="kg" width="24" height="27"/>
+        <image name="lightningIcon" width="64" height="64"/>
         <image name="progressIcon" width="90" height="90"/>
         <image name="scale" width="96" height="96"/>
         <image name="trainingIcon" width="30" height="30"/>
