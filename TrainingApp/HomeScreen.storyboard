@@ -974,6 +974,12 @@
                     <tabBarItem key="tabBarItem" title="Training" image="trainingIcon" id="idg-Cc-qON"/>
                     <connections>
                         <outletCollection property="beginnerView" destination="4xE-Sf-zjm" collectionClass="NSMutableArray" id="l2U-HX-7G0"/>
+                        <outletCollection property="legsTrainingView" destination="Ij0-1n-euk" collectionClass="NSMutableArray" id="Jxb-yH-q9M"/>
+                        <outletCollection property="legsStart" destination="g5y-45-s1z" collectionClass="NSMutableArray" id="sE5-qV-mZm"/>
+                        <outletCollection property="cardioTrainingView" destination="zgu-7i-BzH" collectionClass="NSMutableArray" id="brw-vt-wEo"/>
+                        <outletCollection property="cardioStart" destination="WFE-kf-9iK" collectionClass="NSMutableArray" id="aiL-RM-fRC"/>
+                        <outletCollection property="armTrainingView" destination="kM2-9I-Nhj" collectionClass="NSMutableArray" id="Wn8-em-hxj"/>
+                        <outletCollection property="armStart" destination="vhW-C2-geD" collectionClass="NSMutableArray" id="Qcd-ey-UCZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ey-Wd-bYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
