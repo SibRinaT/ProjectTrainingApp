@@ -718,7 +718,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1213" y="-450"/>
+            <point key="canvasLocation" x="1211.5942028985507" y="-450.00000000000006"/>
         </scene>
         <!--Training-->
         <scene sceneID="lWB-kk-5RO">
@@ -731,8 +731,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avd-ai-zS2">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mum-Cl-cFm">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mum-Cl-cFm">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="435"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfv-0m-42P">
                                                 <rect key="frame" x="16" y="0.0" width="382" height="180"/>
@@ -792,6 +792,159 @@
                                                     <constraint firstItem="4xE-Sf-zjm" firstAttribute="leading" secondItem="yfv-0m-42P" secondAttribute="leading" id="gd8-Ap-AAs"/>
                                                     <constraint firstItem="ZJR-LF-Iaj" firstAttribute="top" secondItem="yfv-0m-42P" secondAttribute="top" constant="8" id="lXi-pv-rqf"/>
                                                     <constraint firstAttribute="height" constant="180" id="okd-mr-obs"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kM2-9I-Nhj">
+                                                <rect key="frame" x="16" y="210" width="382" height="55"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="adh-zG-Ahx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="55"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armMuscle" translatesAutoresizingMaskIntoConstraints="NO" id="i5i-ck-Wn3">
+                                                                <rect key="frame" x="10" y="5" width="45" height="45"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="45" id="RQy-c3-3bO"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arm training" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="th6-hC-xcA">
+                                                                <rect key="frame" x="65" y="5" width="207" height="45"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhW-C2-geD">
+                                                                <rect key="frame" x="282" y="5" width="90" height="45"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="90" id="6Ns-lR-O62"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="BEGIN"/>
+                                                                <buttonConfiguration key="configuration" style="filled">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="START">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                    <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </buttonConfiguration>
+                                                            </button>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="5" left="10" bottom="5" right="10"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.062745098039215685" green="0.070588235294117646" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="adh-zG-Ahx" secondAttribute="trailing" id="6vK-r7-mQg"/>
+                                                    <constraint firstAttribute="height" constant="55" id="Cit-Ot-a9g"/>
+                                                    <constraint firstItem="adh-zG-Ahx" firstAttribute="top" secondItem="kM2-9I-Nhj" secondAttribute="top" id="h4o-ea-PTp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="adh-zG-Ahx" secondAttribute="bottom" id="uCX-qe-MfY"/>
+                                                    <constraint firstItem="adh-zG-Ahx" firstAttribute="leading" secondItem="kM2-9I-Nhj" secondAttribute="leading" id="uHj-Ky-VQ9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ij0-1n-euk">
+                                                <rect key="frame" x="16" y="295" width="382" height="55"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pd0-Ue-Pf9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="55"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="legsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="TQd-h6-jkg">
+                                                                <rect key="frame" x="10" y="5" width="45" height="45"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="45" id="qqS-z5-jCS"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legs training" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYl-W5-goC">
+                                                                <rect key="frame" x="65" y="5" width="207" height="45"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5y-45-s1z">
+                                                                <rect key="frame" x="282" y="5" width="90" height="45"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="90" id="vO5-Pu-bNO"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="BEGIN"/>
+                                                                <buttonConfiguration key="configuration" style="filled">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="START">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                    <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </buttonConfiguration>
+                                                            </button>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="5" left="10" bottom="5" right="10"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.062745098040000002" green="0.070588235289999995" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="pd0-Ue-Pf9" firstAttribute="top" secondItem="Ij0-1n-euk" secondAttribute="top" id="47L-2h-fYs"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pd0-Ue-Pf9" secondAttribute="trailing" id="GIf-pg-Q5R"/>
+                                                    <constraint firstAttribute="height" constant="55" id="X22-a0-xwy"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pd0-Ue-Pf9" secondAttribute="bottom" id="c77-Fx-0QB"/>
+                                                    <constraint firstItem="pd0-Ue-Pf9" firstAttribute="leading" secondItem="Ij0-1n-euk" secondAttribute="leading" id="sda-8k-uJr"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgu-7i-BzH">
+                                                <rect key="frame" x="16" y="380" width="382" height="55"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z5B-9j-Gwf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="55"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardioIcon" translatesAutoresizingMaskIntoConstraints="NO" id="MZy-gt-OZU">
+                                                                <rect key="frame" x="10" y="5" width="45" height="45"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="45" id="9Rc-Aq-W87"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cardio training" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgY-tR-pZ6">
+                                                                <rect key="frame" x="65" y="5" width="207" height="45"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFE-kf-9iK">
+                                                                <rect key="frame" x="282" y="5" width="90" height="45"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="90" id="Ur2-Pb-ad8"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="BEGIN"/>
+                                                                <buttonConfiguration key="configuration" style="filled">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="START">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                    <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </buttonConfiguration>
+                                                            </button>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="5" left="10" bottom="5" right="10"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.062745098040000002" green="0.070588235289999995" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Z5B-9j-Gwf" secondAttribute="trailing" id="7sC-Bu-o2k"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Z5B-9j-Gwf" secondAttribute="bottom" id="9mb-ff-jzk"/>
+                                                    <constraint firstItem="Z5B-9j-Gwf" firstAttribute="leading" secondItem="zgu-7i-BzH" secondAttribute="leading" id="SyQ-81-rD6"/>
+                                                    <constraint firstItem="Z5B-9j-Gwf" firstAttribute="top" secondItem="zgu-7i-BzH" secondAttribute="top" id="Zxu-FH-90r"/>
+                                                    <constraint firstAttribute="height" constant="55" id="lMg-an-N0V"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -860,11 +1013,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="armMuscle" width="64" height="64"/>
         <image name="beginerIcon" width="1920" height="1080"/>
+        <image name="cardioIcon" width="66" height="66"/>
         <image name="challengeIcon" width="96" height="96"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="icons8-lightning-bolt-64-3" width="64" height="64"/>
         <image name="kg" width="24" height="27"/>
+        <image name="legsIcon" width="100" height="100"/>
         <image name="lightningIcon" width="64" height="64"/>
         <image name="progressIcon" width="90" height="90"/>
         <image name="scale" width="96" height="96"/>
