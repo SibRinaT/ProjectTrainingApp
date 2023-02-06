@@ -950,6 +950,44 @@
                                         </subviews>
                                         <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
                                     </stackView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j67-26-jSz">
+                                        <rect key="frame" x="-441" y="1413" width="414" height="687"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dI2-jW-paF">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOo-7m-LyU">
+                                                        <rect key="frame" x="16" y="0.0" width="382" height="55"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UDF-M1-Ouv">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="55"/>
+                                                                <edgeInsets key="layoutMargins" top="5" left="10" bottom="5" right="10"/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.062745098040000002" green="0.070588235289999995" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="UDF-M1-Ouv" secondAttribute="bottom" id="Aue-PJ-CXz"/>
+                                                            <constraint firstItem="UDF-M1-Ouv" firstAttribute="leading" secondItem="jOo-7m-LyU" secondAttribute="leading" id="EBu-lE-e4i"/>
+                                                            <constraint firstItem="UDF-M1-Ouv" firstAttribute="top" secondItem="jOo-7m-LyU" secondAttribute="top" id="u4P-um-AgW"/>
+                                                            <constraint firstAttribute="height" constant="55" id="wUq-0L-Dc1"/>
+                                                            <constraint firstAttribute="trailing" secondItem="UDF-M1-Ouv" secondAttribute="trailing" id="xM9-Ix-bvd"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="dI2-jW-paF" firstAttribute="leading" secondItem="K1N-Se-0wZ" secondAttribute="leading" id="2Ts-Qz-ovr"/>
+                                            <constraint firstItem="dI2-jW-paF" firstAttribute="bottom" secondItem="K1N-Se-0wZ" secondAttribute="bottom" id="CTw-6s-rL3"/>
+                                            <constraint firstItem="dI2-jW-paF" firstAttribute="width" secondItem="syF-y6-v3M" secondAttribute="width" id="CW4-KW-XQv"/>
+                                            <constraint firstItem="dI2-jW-paF" firstAttribute="top" secondItem="K1N-Se-0wZ" secondAttribute="top" id="p82-Mo-tlF"/>
+                                            <constraint firstItem="dI2-jW-paF" firstAttribute="trailing" secondItem="K1N-Se-0wZ" secondAttribute="trailing" id="pZK-Bm-BVq"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="K1N-Se-0wZ"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="syF-y6-v3M"/>
+                                    </scrollView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="mum-Cl-cFm" firstAttribute="top" secondItem="2qW-x7-R7K" secondAttribute="top" id="6KC-g6-lBt"/>
@@ -1011,11 +1049,28 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Vgq-G7-8w7"/>
                         <segue destination="aYo-g4-CKh" kind="relationship" relationship="viewControllers" id="HAa-ak-RVD"/>
+                        <segue destination="reL-Bz-lfo" kind="relationship" relationship="viewControllers" id="Z24-0M-5So"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LjJ-b1-rbb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="15.942028985507248" y="65.625"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="2hD-FK-lac">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNm-Vp-EKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="reL-Bz-lfo" userLabel="Settings" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a3C-xY-3CY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ncA-yh-1Pt"/>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.043137254899999998" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="qb9-li-DJS"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="16" y="1026"/>
         </scene>
     </scenes>
     <resources>
@@ -1023,6 +1078,7 @@
         <image name="beginerIcon" width="1920" height="1080"/>
         <image name="cardioIcon" width="66" height="66"/>
         <image name="challengeIcon" width="96" height="96"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="icons8-lightning-bolt-64-3" width="64" height="64"/>
         <image name="kg" width="24" height="27"/>
