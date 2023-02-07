@@ -16,6 +16,12 @@ class TrainingScreen: UIViewController {
     @IBOutlet var armStart: [UIButton]!
     @IBOutlet var legsStart: [UIButton]!
     @IBOutlet var cardioStart: [UIButton]!
+    @IBOutlet var warm_upStart: [UIButton]!
+    @IBOutlet var chestStart: [UIButton]!
+    @IBOutlet var absStart: [UIButton]!
+    @IBOutlet var backStart: [UIButton]!
+
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -48,6 +54,22 @@ class TrainingScreen: UIViewController {
         }
 
         for sides in beginnerView {
+            sides.layer.cornerRadius = 16
+            sides.clipsToBounds = true
+        }
+        for sides in absStart {
+            sides.layer.cornerRadius = 16
+            sides.clipsToBounds = true
+        }
+        for sides in chestStart {
+            sides.layer.cornerRadius = 16
+            sides.clipsToBounds = true
+        }
+        for sides in backStart {
+            sides.layer.cornerRadius = 16
+            sides.clipsToBounds = true
+        }
+        for sides in warm_upStart {
             sides.layer.cornerRadius = 16
             sides.clipsToBounds = true
         }
