@@ -8,70 +8,39 @@
 import Foundation
 import UIKit
 class TrainingScreen: UIViewController {
-    @IBOutlet var beginnerView: [UIView]!
-    @IBOutlet var armTrainingView: [UIView]!
-    @IBOutlet var legsTrainingView: [UIView]!
-    @IBOutlet var cardioTrainingView: [UIView]!
-    
-    @IBOutlet var armStart: [UIButton]!
-    @IBOutlet var legsStart: [UIButton]!
-    @IBOutlet var cardioStart: [UIButton]!
-    @IBOutlet var warm_upStart: [UIButton]!
-    @IBOutlet var chestStart: [UIButton]!
-    @IBOutlet var absStart: [UIButton]!
-    @IBOutlet var backStart: [UIButton]!
-
-    
+    @IBOutlet private var tableView: UITableView!
+    var tableViewData = [TrainingCellViewModel]()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        tableView.delegate = self
+        tableView.dataSource = self
         
-        for sides in armTrainingView {
-            sides.layer.cornerRadius = 16
-            sides.clipsToBounds = true
-        }
-        for sides in armStart {
-            sides.layer.cornerRadius = 16
-            sides.clipsToBounds = true
-        }
-        for sides in legsTrainingView {
-            sides.layer.cornerRadius = 16
-            sides.clipsToBounds = true
-        }
-        for sides in legsStart {
-            sides.layer.cornerRadius = 16
-            sides.clipsToBounds = true
-        }
+        let model1 = TrainingCellViewModel(title: "Arm training", imageName: "armMuscle")
+        tableViewData.append(model1)
         
-        for sides in cardioTrainingView {
-            sides.layer.cornerRadius = 16
-            sides.clipsToBounds = true
-        }
+        let model2 = TrainingCellViewModel(title: "Legs training", imageName: "legsIcon")
+        tableViewData.append(model2)
         
-        for sides in cardioStart {
-            sides.layer.cornerRadius = 16
-            sides.clipsToBounds = true
-        }
+        let model3 = TrainingCellViewModel(title: "Cardio training", imageName: "cardioIcon")
+        tableViewData.append(model3)
 
-        for sides in beginnerView {
-            sides.layer.cornerRadius = 16
-            sides.clipsToBounds = true
-        }
-        for sides in absStart {
-            sides.layer.cornerRadius = 16
-            sides.clipsToBounds = true
-        }
-        for sides in chestStart {
-            sides.layer.cornerRadius = 16
-            sides.clipsToBounds = true
-        }
-        for sides in backStart {
-            sides.layer.cornerRadius = 16
-            sides.clipsToBounds = true
-        }
-        for sides in warm_upStart {
-            sides.layer.cornerRadius = 16
-            sides.clipsToBounds = true
-        }
+    }
+}
+
+extension TrainingScreen: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        tableViewData.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        53
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TrainingCell", for: indexPath)
+        let model = tableViewData[indexPath.row]
+        cell.configure(with: model)
+        return cell
     }
 }
