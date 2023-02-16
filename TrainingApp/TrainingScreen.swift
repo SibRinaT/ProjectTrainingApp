@@ -29,6 +29,7 @@ class TrainingScreen: UIViewController {
 }
 
 extension TrainingScreen: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableViewData.count
     }
@@ -38,9 +39,10 @@ extension TrainingScreen: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TrainingCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TrainingCell", for: indexPath) as! TrainingCell
         let model = tableViewData[indexPath.row]
         cell.configure(with: model)
         return cell
     }
 }
+  

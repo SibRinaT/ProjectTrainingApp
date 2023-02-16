@@ -816,7 +816,7 @@
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="iconImageView" destination="lpM-Og-pQt" id="11c-tS-G3d"/>
-                                                    <outlet property="titleView" destination="URf-wV-n6X" id="ymj-qD-5cu"/>
+                                                    <outlet property="titleLabel" destination="URf-wV-n6X" id="5K8-C9-whj"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
