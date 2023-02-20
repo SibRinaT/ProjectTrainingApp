@@ -749,23 +749,70 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNn-f5-Dlv">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XuW-Sd-SRM">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beginner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVS-eD-hMH">
+                                                <rect key="frame" x="329" y="8.0000000000000018" width="70" height="21.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="BVj-nb-iUB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MnP-mk-o3R">
+                                                <rect key="frame" x="354" y="29" width="45" height="12"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lightningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="V7m-eZ-oGh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-lightning-bolt-64-3" translatesAutoresizingMaskIntoConstraints="NO" id="CCz-8p-cg8">
+                                                        <rect key="frame" x="16" y="0.0" width="12" height="12"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-lightning-bolt-64-3" translatesAutoresizingMaskIntoConstraints="NO" id="tVv-wo-iIT">
+                                                        <rect key="frame" x="33" y="0.0" width="12" height="12"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="12" id="ZNR-zG-ihu"/>
+                                                    <constraint firstAttribute="width" constant="45" id="x8w-6i-2fv"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light exercise. Ideal for beginner athletes" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcm-Ca-htI">
+                                                <rect key="frame" x="233" y="131.66666666666666" width="166" height="32.333333333333343"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="166" id="8yb-Nd-w3n"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.074509806930000005" green="0.086274504660000001" blue="0.1058823466" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="160" id="598-dc-Jgx"/>
+                                            <constraint firstAttribute="height" constant="180" id="598-dc-Jgx"/>
                                             <constraint firstAttribute="bottom" secondItem="XuW-Sd-SRM" secondAttribute="bottom" id="LFF-V9-W9b"/>
+                                            <constraint firstAttribute="trailing" secondItem="dVS-eD-hMH" secondAttribute="trailing" constant="15" id="Q8e-S8-ZWd"/>
                                             <constraint firstAttribute="trailing" secondItem="XuW-Sd-SRM" secondAttribute="trailing" id="Qps-gi-3tC"/>
+                                            <constraint firstAttribute="trailing" secondItem="MnP-mk-o3R" secondAttribute="trailing" constant="15" id="U6r-5h-flf"/>
+                                            <constraint firstAttribute="trailing" secondItem="Zcm-Ca-htI" secondAttribute="trailing" constant="15" id="Wv0-nY-kGu"/>
                                             <constraint firstItem="XuW-Sd-SRM" firstAttribute="leading" secondItem="gNn-f5-Dlv" secondAttribute="leading" id="Y8P-YI-9IK"/>
+                                            <constraint firstItem="MnP-mk-o3R" firstAttribute="top" secondItem="gNn-f5-Dlv" secondAttribute="top" constant="29" id="nqW-zP-b8D"/>
+                                            <constraint firstAttribute="bottom" secondItem="Zcm-Ca-htI" secondAttribute="bottom" constant="16" id="rvp-Kl-802"/>
+                                            <constraint firstItem="dVS-eD-hMH" firstAttribute="top" secondItem="gNn-f5-Dlv" secondAttribute="top" constant="8" id="vDt-QR-yxd"/>
                                             <constraint firstItem="XuW-Sd-SRM" firstAttribute="top" secondItem="gNn-f5-Dlv" secondAttribute="top" id="xfd-jz-m5b"/>
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hXj-bB-epO">
-                                        <rect key="frame" x="0.0" y="160" width="414" height="527"/>
+                                        <rect key="frame" x="0.0" y="180" width="414" height="507"/>
                                         <color key="backgroundColor" red="0.074509806930000005" green="0.086274504660000001" blue="0.1058823466" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrainingCell" rowHeight="58" id="mRi-eF-1cB" customClass="TrainingCell" customModule="TrainingApp" customModuleProvider="target">
