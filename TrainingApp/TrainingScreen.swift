@@ -16,24 +16,23 @@ class TrainingScreen: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        let model1 = TrainingCellViewModel(title: "Arm ", imageName: "armMuscle")
+        let model1 = TrainingCellViewModel(title: "Arm ", imageName: "armMuscle", DescriptionLabel: "Arm training")
         tableViewData.append(model1)
         
-        let model2 = TrainingCellViewModel(title: "Legs ", imageName: "legsIcon")
+        let model2 = TrainingCellViewModel(title: "Legs ", imageName: "legsIcon", DescriptionLabel: "Legs training")
         tableViewData.append(model2)
         
-        let model3 = TrainingCellViewModel(title: "Cardio ", imageName: "cardioIcon")
+        let model3 = TrainingCellViewModel(title: "Cardio ", imageName: "cardioIcon", DescriptionLabel: "Cardio training")
         tableViewData.append(model3)
         
-        let model4 = TrainingCellViewModel(title: "ABS ", imageName: "absIcon")
+        let model4 = TrainingCellViewModel(title: "ABS ", imageName: "absIcon", DescriptionLabel: "ABS training")
         tableViewData.append(model4)
         
-        let model5 = TrainingCellViewModel(title: "Back ", imageName: "backIcon")
+        let model5 = TrainingCellViewModel(title: "Back ", imageName: "backIcon", DescriptionLabel: "Back training")
         tableViewData.append(model5)
         
-        let model6 = TrainingCellViewModel(title: "Warm-up", imageName: "warm-upIcon")
+        let model6 = TrainingCellViewModel(title: "Warm-up", imageName: "warm-upIcon", DescriptionLabel: "Warm-up training")
         tableViewData.append(model6)
-        
 
     }
 }

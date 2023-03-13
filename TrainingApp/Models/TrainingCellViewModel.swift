@@ -9,4 +9,5 @@ import Foundation
 struct TrainingCellViewModel {
     let title: String
     let imageName: String
+    let DescriptionLabel: String
 }
