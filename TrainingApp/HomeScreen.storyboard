@@ -884,8 +884,8 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="descriptionLabel" destination="Z3h-bs-gLb" id="diD-20-mGx"/>
                                                     <outlet property="iconImageView" destination="lpM-Og-pQt" id="11c-tS-G3d"/>
+                                                    <outlet property="titleDescriptionLabel" destination="Z3h-bs-gLb" id="iSg-UI-Iee"/>
                                                     <outlet property="titleLabel" destination="URf-wV-n6X" id="5K8-C9-whj"/>
                                                 </connections>
                                             </tableViewCell>
