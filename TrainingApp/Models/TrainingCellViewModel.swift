@@ -8,5 +8,5 @@
 import Foundation
 struct TrainingCellViewModel {
     let title: String
-    let imageName: String
+    let imageName: String    
 }
