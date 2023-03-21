@@ -12,31 +12,34 @@ class TrainingScreen: UIViewController {
     @IBOutlet private var collectionView: UICollectionView!
 
     var tableViewData = [TrainingCellViewModel]()
+    var filteredTableViewData = [TrainingCellViewModel]()
     var levelData = [LevelCellViewModel]()
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    
         tableView.delegate = self
         tableView.dataSource = self
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        let model1 = TrainingCellViewModel(title: "Arm ", imageName: "armMuscle")
+        let model1 = TrainingCellViewModel(title: "Arm ", imageName: "armMuscle", level: .beginner)
         tableViewData.append(model1)
         
-        let model2 = TrainingCellViewModel(title: "Legs ", imageName: "legsIcon")
+        let model2 = TrainingCellViewModel(title: "Legs ", imageName: "legsIcon", level: .beginner)
         tableViewData.append(model2)
         
-        let model3 = TrainingCellViewModel(title: "Cardio ", imageName: "cardioIcon")
+        let model3 = TrainingCellViewModel(title: "Cardio ", imageName: "cardioIcon", level: .beginner)
         tableViewData.append(model3)
         
-        let model4 = TrainingCellViewModel(title: "ABS ", imageName: "absIcon")
+        let model4 = TrainingCellViewModel(title: "ABS ", imageName: "absIcon", level: .intermediate)
         tableViewData.append(model4)
         
-        let model5 = TrainingCellViewModel(title: "Back ", imageName: "backIcon")
+        let model5 = TrainingCellViewModel(title: "Back ", imageName: "backIcon", level: .intermediate)
         tableViewData.append(model5)
         
-        let model6 = TrainingCellViewModel(title: "Warm-up", imageName: "warm-upIcon")
+        let model6 = TrainingCellViewModel(title: "Warm-up", imageName: "warm-upIcon", level: .intermediate)
         tableViewData.append(model6)
 
         levelData.append(LevelCellViewModel(imageName: "beginnerSplashImage", title: "Beginner", subtitle: "Light exercise. Ideal for beginner athletes"))
@@ -44,13 +47,21 @@ class TrainingScreen: UIViewController {
         levelData.append(LevelCellViewModel(imageName: "intermediateSplashImage", title: "Intermediate", subtitle: "Intermediate exercises. Suitable for advanced athletes"))
         
         levelData.append(LevelCellViewModel(imageName: "advancedSplashImage", title: "Advanced", subtitle: "Аdvanced exercises. Ideal for already experienced athletes"))
+        
+        filteredTableViewData = tableViewData.filter{ $0.level == .beginner }
+        tableView.reloadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
     }
 }
 
 extension TrainingScreen: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        tableViewData.count
+        filteredTableViewData.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -59,7 +70,7 @@ extension TrainingScreen: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TrainingCell", for: indexPath) as! TrainingCell
-        let model = tableViewData[indexPath.row]
+        let model = filteredTableViewData[indexPath.row]
         cell.configure(with: model)
         return cell
     }
@@ -78,5 +89,21 @@ extension TrainingScreen: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: collectionView.frame.size.width , height: collectionView.frame.size.height)
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+//        print(indexPath)
+//
+//    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView == collectionView {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+                guard let sSelf = self else { return  }
+                if let cell = sSelf.collectionView.visibleCells.first { let ip = sSelf.collectionView.indexPath(for: cell)
+                }
+                sSelf.filteredTableViewData = tableViewData.filter{ $0.level == TrainingLevel(rawValue: ip.item) }
+                sSelf.tableView.reloadData()
+            }
+        }
     }
 }

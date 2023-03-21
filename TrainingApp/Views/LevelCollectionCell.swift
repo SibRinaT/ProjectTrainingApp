@@ -15,7 +15,7 @@ class LevelCollectionCell: UICollectionViewCell {
     func configureWith(model: LevelCellViewModel) {
         levelImageView.image = UIImage(named: model.imageName)
         titleLabel.text = model.title
-        subtitleLabel.text = model.subtitle
+        subtitleLabel.text = model.subtitle 
         
     }
     

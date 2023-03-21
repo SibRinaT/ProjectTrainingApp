@@ -8,5 +8,11 @@
 import Foundation
 struct TrainingCellViewModel {
     let title: String
-    let imageName: String    
+    let imageName: String
+    let level: TrainingLevel
+}
+
+enum TrainingLevel: Int {
+    case beginner = 0
+    case intermediate = 1
 }
