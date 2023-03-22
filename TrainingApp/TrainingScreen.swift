@@ -39,7 +39,7 @@ class TrainingScreen: UIViewController {
         let model5 = TrainingCellViewModel(title: "Back ", imageName: "backIcon", level: .intermediate)
         tableViewData.append(model5)
         
-        let model6 = TrainingCellViewModel(title: "Warm-up", imageName: "warm-upIcon", level: .intermediate)
+        let model6 = TrainingCellViewModel(title: "Warm-up", imageName: "warm-upIcon", level: .advanced)
         tableViewData.append(model6)
 
         levelData.append(LevelCellViewModel(imageName: "beginnerSplashImage", title: "Beginner", subtitle: "Light exercise. Ideal for beginner athletes"))
@@ -97,11 +97,12 @@ extension TrainingScreen: UICollectionViewDelegate, UICollectionViewDataSource, 
 //    }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView == collectionView {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
-                guard let sSelf = self else { return  }
-                if let cell = sSelf.collectionView.visibleCells.first { let ip = sSelf.collectionView.indexPath(for: cell)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { [weak self] in
+                guard let sSelf = self else { return }
+                if let cell = sSelf.collectionView.visibleCells.first,  let ip = sSelf.collectionView.indexPath(for: cell)
+                {
+                    sSelf.filteredTableViewData = sSelf.tableViewData.filter{ $0.level == TrainingLevel(rawValue: ip.item)}
                 }
-                sSelf.filteredTableViewData = tableViewData.filter{ $0.level == TrainingLevel(rawValue: ip.item) }
                 sSelf.tableView.reloadData()
             }
         }

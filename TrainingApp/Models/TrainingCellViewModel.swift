@@ -15,4 +15,5 @@ struct TrainingCellViewModel {
 enum TrainingLevel: Int {
     case beginner = 0
     case intermediate = 1
+    case advanced = 2 
 }
