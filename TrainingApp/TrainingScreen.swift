@@ -10,6 +10,7 @@ import UIKit
 class TrainingScreen: UIViewController {
     @IBOutlet private var tableView: UITableView!
     @IBOutlet private var collectionView: UICollectionView!
+    @IBOutlet private var pageControl: UIPageControl!
 
     var tableViewData = [TrainingCellViewModel]()
     var filteredTableViewData = [TrainingCellViewModel]()
@@ -18,7 +19,6 @@ class TrainingScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
         tableView.delegate = self
         tableView.dataSource = self
         collectionView.delegate = self
@@ -41,13 +41,16 @@ class TrainingScreen: UIViewController {
         
         let model6 = TrainingCellViewModel(title: "Warm-up", imageName: "warm-upIcon", level: .advanced)
         tableViewData.append(model6)
+        
+        let model7 = TrainingCellViewModel(title: "Arm ", imageName: "armMuscle", level: .advanced)
+        tableViewData.append(model7)
 
         levelData.append(LevelCellViewModel(imageName: "beginnerSplashImage", title: "Beginner", subtitle: "Light exercise. Ideal for beginner athletes"))
         
         levelData.append(LevelCellViewModel(imageName: "intermediateSplashImage", title: "Intermediate", subtitle: "Intermediate exercises. Suitable for advanced athletes"))
         
         levelData.append(LevelCellViewModel(imageName: "advancedSplashImage", title: "Advanced", subtitle: "Аdvanced exercises. Ideal for already experienced athletes"))
-        
+   
         filteredTableViewData = tableViewData.filter{ $0.level == .beginner }
         tableView.reloadData()
     }
@@ -75,6 +78,7 @@ extension TrainingScreen: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 }
+
   
 extension TrainingScreen: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -90,12 +94,11 @@ extension TrainingScreen: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: collectionView.frame.size.width , height: collectionView.frame.size.height)
     }
-    
-//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        print(indexPath)
-//
-//    }
+     
+
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        pageControl.currentPage = Int(scrollView.contentOffset.x / UIScreen.main.bounds.width)
+
         if scrollView == collectionView {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { [weak self] in
                 guard let sSelf = self else { return }
