@@ -45,11 +45,11 @@ class TrainingScreen: UIViewController {
         let model7 = TrainingCellViewModel(title: "Arm ", imageName: "armMuscle", level: .advanced)
         tableViewData.append(model7)
 
-        levelData.append(LevelCellViewModel(imageName: "beginnerSplashImage", title: "Beginner", subtitle: "Light exercise. Ideal for beginner athletes"))
+        levelData.append(LevelCellViewModel(imageName: "beginnerSplashImage", title: "Beginner", subtitle: "Light exercise. Ideal for beginner athletes", level: .beginner))
         
-        levelData.append(LevelCellViewModel(imageName: "intermediateSplashImage", title: "Intermediate", subtitle: "Intermediate exercises. Suitable for advanced athletes"))
+        levelData.append(LevelCellViewModel(imageName: "intermediateSplashImage", title: "Intermediate", subtitle: "Intermediate exercises. Suitable for advanced athletes", level: .intermediate))
         
-        levelData.append(LevelCellViewModel(imageName: "advancedSplashImage", title: "Advanced", subtitle: "Аdvanced exercises. Ideal for already experienced athletes"))
+        levelData.append(LevelCellViewModel(imageName: "advancedSplashImage", title: "Advanced", subtitle: "Аdvanced exercises. Ideal for already experienced athletes", level: .advanced))
    
         filteredTableViewData = tableViewData.filter{ $0.level == .beginner }
         tableView.reloadData()
