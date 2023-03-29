@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "568DB10E-2A49-4586-B2A0-BFF2CBB397DB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8B59C7B-E798-4CBD-8E82-E65F8557282D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainingApp/HomeScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "HomeScreen"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D8B59C7B-E798-4CBD-8E82-E65F8557282D - 89f4a6363c80ca5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrainingApp.HomeScreen.daysIcons.getter : Swift.Optional&lt;Swift.Array&lt;__C.UIImageView&gt;&gt;"
+                  moduleName = "TrainingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ainur/ProjectTrainingApp/TrainingApp/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "D8B59C7B-E798-4CBD-8E82-E65F8557282D - 3fbbea3732229ca9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrainingApp.HomeScreen.daysIcons.setter : Swift.Optional&lt;Swift.Array&lt;__C.UIImageView&gt;&gt;"
+                  moduleName = "TrainingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ainur/ProjectTrainingApp/TrainingApp/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "D8B59C7B-E798-4CBD-8E82-E65F8557282D - 5a125b48b5c880b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrainingApp.HomeScreen.daysIcons.modify : Swift.Optional&lt;Swift.Array&lt;__C.UIImageView&gt;&gt;"
+                  moduleName = "TrainingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ainur/ProjectTrainingApp/TrainingApp/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "D8B59C7B-E798-4CBD-8E82-E65F8557282D - b5486e1a7e1243eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrainingApp.HomeScreen.daysIcons.modify : Swift.Optional&lt;Swift.Array&lt;__C.UIImageView&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "TrainingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ainur/ProjectTrainingApp/TrainingApp/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "D8B59C7B-E798-4CBD-8E82-E65F8557282D - bdf4aff04335af63"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrainingApp.HomeScreen.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TrainingApp.HomeScreen"
+                  moduleName = "TrainingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ainur/ProjectTrainingApp/TrainingApp/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "304">
+               </Location>
+               <Location
+                  uuid = "D8B59C7B-E798-4CBD-8E82-E65F8557282D - 1ab5c80186044349"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrainingApp.HomeScreen.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TrainingApp.HomeScreen&gt;"
+                  moduleName = "TrainingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ainur/ProjectTrainingApp/TrainingApp/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "280">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39609736-C51C-451C-A041-18916ECB10AD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainingApp/Views/levelCollectionCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
