@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZWo-Lj-NSZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZWo-Lj-NSZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="DjU-ji-ujF">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="739"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="735"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cvl-z0-1cg">
-                                                <rect key="frame" x="16" y="48" width="382" height="100"/>
+                                                <rect key="frame" x="16" y="44" width="382" height="100"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="X9k-kg-WEy">
                                                         <rect key="frame" x="16.5" y="5" width="349" height="90"/>
@@ -469,7 +468,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GX9-73-5AY">
-                                                <rect key="frame" x="16" y="164" width="382" height="160"/>
+                                                <rect key="frame" x="16" y="160" width="382" height="160"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="upy-78-w4u">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="160"/>
@@ -543,7 +542,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTi-3G-9SU">
-                                                <rect key="frame" x="16" y="340" width="382" height="220"/>
+                                                <rect key="frame" x="16" y="336" width="382" height="220"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="s71-tI-Fu1">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="220"/>
@@ -593,7 +592,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sM-TS-3fn">
-                                                <rect key="frame" x="16" y="576" width="382" height="163"/>
+                                                <rect key="frame" x="16" y="572" width="382" height="163"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="CAr-cE-ipe">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="163"/>
@@ -731,7 +730,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="L83-ui-odz">
-                                <rect key="frame" x="20.5" y="48" width="373" height="765"/>
+                                <rect key="frame" x="20.5" y="44" width="373" height="769"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="591-Ud-4X1">
                                         <rect key="frame" x="0.0" y="0.0" width="373" height="155"/>
@@ -810,16 +809,17 @@
                                         </cells>
                                     </collectionView>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LVW-Uz-QMd" customClass="PageControlLevel" customModule="TrainingApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="165" width="373" height="74"/>
+                                        <rect key="frame" x="0.0" y="165" width="373" height="78"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="pageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="currentPageIndicatorTintColor" red="0.29803922770000002" green="0.61960786580000005" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </pageControl>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hXj-bB-epO">
-                                        <rect key="frame" x="0.0" y="249" width="373" height="516"/>
+                                        <rect key="frame" x="0.0" y="253" width="373" height="516"/>
                                         <color key="backgroundColor" red="0.039215687659999998" green="0.043137259779999999" blue="0.047058824450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrainingCell" rowHeight="58" id="mRi-eF-1cB" customClass="TrainingCell" customModule="TrainingApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="50" width="373" height="58"/>
+                                                <rect key="frame" x="0.0" y="44.5" width="373" height="58"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mRi-eF-1cB" id="Msn-DF-OFh">
                                                     <rect key="frame" x="0.0" y="0.0" width="373" height="58"/>
@@ -962,8 +962,8 @@
         <image name="armMuscle" width="64" height="64"/>
         <image name="beginnerSplashImage" width="1920" height="1080"/>
         <image name="challengeIcon" width="96" height="96"/>
-        <image name="gear" catalog="system" width="128" height="122"/>
-        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="kg" width="24" height="27"/>
         <image name="lightningBegginer" width="38" height="13"/>
         <image name="progressIcon" width="90" height="90"/>
