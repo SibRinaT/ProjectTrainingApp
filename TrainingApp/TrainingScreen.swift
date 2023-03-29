@@ -97,7 +97,7 @@ extension TrainingScreen: UICollectionViewDelegate, UICollectionViewDataSource, 
      
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        pageControl.currentPage = Int(scrollView.contentOffset.x / UIScreen.main.bounds.width)
+        pageControl.currentPage = Int(scrollView.contentOffset.x / scrollView.bounds.width)
 
         if scrollView == collectionView {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { [weak self] in
