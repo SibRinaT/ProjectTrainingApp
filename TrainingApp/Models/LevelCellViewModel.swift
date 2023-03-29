@@ -11,4 +11,5 @@ struct LevelCellViewModel {
     let imageName: String
     let title: String
     let subtitle: String
+    let level: TrainingLevel
 }

@@ -15,5 +15,16 @@ struct TrainingCellViewModel {
 enum TrainingLevel: Int {
     case beginner = 0
     case intermediate = 1
-    case advanced = 2 
+    case advanced = 2
+    
+    var lightningImageName: String {
+        switch self {
+        case .beginner:
+            return "lightningBegginer"
+        case .intermediate:
+            return "lightningInter"
+        case .advanced:
+            return "lightningAdvanced"
+        }
+    }
 }
