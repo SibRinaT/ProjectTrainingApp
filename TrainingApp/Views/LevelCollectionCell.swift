@@ -12,6 +12,7 @@ class LevelCollectionCell: UICollectionViewCell {
     @IBOutlet private var lightningImageView: UIImageView!
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var subtitleLabel: UILabel!
+    var level: TrainingLevel? 
     
     func configureWith(model: LevelCellViewModel) {
         levelImageView.image = UIImage(named: model.imageName)

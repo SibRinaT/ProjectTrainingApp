@@ -11,6 +11,7 @@ class TrainingScreen: UIViewController {
     @IBOutlet private var tableView: UITableView!
     @IBOutlet private var collectionView: UICollectionView!
     @IBOutlet private var pageControl: UIPageControl!
+    @IBOutlet private var addTrainingView: UIView!
 
     var tableViewData = [TrainingCellViewModel]()
     var filteredTableViewData = [TrainingCellViewModel]()
@@ -56,6 +57,8 @@ class TrainingScreen: UIViewController {
    
         filteredTableViewData = tableViewData.filter{ $0.level == .beginner }
         tableView.reloadData()
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -107,6 +110,11 @@ extension TrainingScreen: UICollectionViewDelegate, UICollectionViewDataSource, 
                 guard let sSelf = self else { return }
                 if let cell = sSelf.collectionView.visibleCells.first,  let ip = sSelf.collectionView.indexPath(for: cell)
                 {
+                    if let cell = cell as? LevelCollectionCell, cell.level == .mytraining{
+                        addTrainingView.isHidden = true
+                    } else {
+                        
+                    }
                     sSelf.filteredTableViewData = sSelf.tableViewData.filter{ $0.level == TrainingLevel(rawValue: ip.item)}
                 }
                 sSelf.tableView.reloadData()
