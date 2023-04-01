@@ -110,9 +110,11 @@ extension TrainingScreen: UICollectionViewDelegate, UICollectionViewDataSource, 
                 guard let sSelf = self else { return }
                 if let cell = sSelf.collectionView.visibleCells.first,  let ip = sSelf.collectionView.indexPath(for: cell)
                 {
-                    if let cell = cell as? LevelCollectionCell, cell.level == .mytraining{
-                        addTrainingView.isHidden = true
+                    if let cell = cell as? LevelCollectionCell, cell.level == .mytraining {
+                        self?.addTrainingView.isHidden = false
+                        
                     } else {
+                        self?.addTrainingView.isHidden = true
                         
                     }
                     sSelf.filteredTableViewData = sSelf.tableViewData.filter{ $0.level == TrainingLevel(rawValue: ip.item)}
