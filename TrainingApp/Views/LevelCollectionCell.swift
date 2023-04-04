@@ -15,6 +15,7 @@ class LevelCollectionCell: UICollectionViewCell {
     var level: TrainingLevel? 
     
     func configureWith(model: LevelCellViewModel) {
+        self.level = model.level
         levelImageView.image = UIImage(named: model.imageName)
         titleLabel.text = model.title
         subtitleLabel.text = model.subtitle
