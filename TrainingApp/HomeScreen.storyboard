@@ -809,13 +809,13 @@
                                         </cells>
                                     </collectionView>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="LVW-Uz-QMd" customClass="PageControlLevel" customModule="TrainingApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="165" width="372.66666666666669" height="259"/>
+                                        <rect key="frame" x="0.0" y="165" width="372.66666666666669" height="90"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="pageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="currentPageIndicatorTintColor" red="0.29803922770000002" green="0.61960786580000005" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </pageControl>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aw0-8L-j0k" customClass="addTrainingView" customModule="TrainingApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="429" width="372.66666666666669" height="55"/>
+                                        <rect key="frame" x="0.0" y="260" width="372.66666666666669" height="55"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new training" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyn-8c-3jF">
                                                 <rect key="frame" x="90" y="6" width="107" height="40.666666666666664"/>
@@ -825,17 +825,20 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4B-h7-psl">
                                                 <rect key="frame" x="202" y="6" width="43.666666666666657" height="43.666666666666664"/>
+                                                <color key="backgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43.5" id="W3j-i8-xnK"/>
                                                     <constraint firstAttribute="width" secondItem="W4B-h7-psl" secondAttribute="height" multiplier="1:1" id="aOz-pV-HoS"/>
                                                 </constraints>
                                                 <color key="tintColor" red="0.29803922770000002" green="0.61960786580000005" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="+" subtitle="">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="34"/>
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="32"/>
+                                                    <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.062745098039215685" green="0.070588235294117646" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="W4B-h7-psl" secondAttribute="trailing" constant="127" id="IlJ-rF-EwL"/>
                                             <constraint firstItem="pyn-8c-3jF" firstAttribute="leading" secondItem="aw0-8L-j0k" secondAttribute="leading" constant="90" id="SN1-N7-gKa"/>
@@ -846,7 +849,7 @@
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hXj-bB-epO">
-                                        <rect key="frame" x="0.0" y="434" width="372.66666666666669" height="253"/>
+                                        <rect key="frame" x="0.0" y="265" width="372.66666666666669" height="422"/>
                                         <color key="backgroundColor" red="0.039215687659999998" green="0.043137259779999999" blue="0.047058824450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrainingCell" rowHeight="58" id="mRi-eF-1cB" customClass="TrainingCell" customModule="TrainingApp" customModuleProvider="target">

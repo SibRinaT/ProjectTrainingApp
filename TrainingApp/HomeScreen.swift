@@ -21,7 +21,9 @@ class HomeScreen: UIViewController {
     @IBOutlet var weightHeighButton: [UIButton]!
     @IBOutlet var challengeButton: [UIButton]!
     
+    
     override func viewDidLoad() {
+      
         super.viewDidLoad()
                 
         let currentDate = Date() // текущее число
@@ -50,10 +52,12 @@ class HomeScreen: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        
         for sides in calendarView {
             sides.layer.cornerRadius = 16
             sides.clipsToBounds = true
         }
+
         
         for circles in daysCirles {
             circles.layer.cornerRadius = circles.frame.size.width / 2
