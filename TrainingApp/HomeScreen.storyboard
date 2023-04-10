@@ -1027,9 +1027,9 @@ This is app for training your body
                                                 <state key="normal" title="BEGIN"/>
                                                 <buttonConfiguration key="configuration" style="filled">
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="START">
+                                                        <fragment content="next">
                                                             <attributes>
-                                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                                <font key="NSFont" size="26" name="Helvetica-Bold"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
