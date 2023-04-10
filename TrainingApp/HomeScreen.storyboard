@@ -809,13 +809,13 @@
                                         </cells>
                                     </collectionView>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="LVW-Uz-QMd" customClass="PageControlLevel" customModule="TrainingApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="165" width="372.66666666666669" height="90"/>
+                                        <rect key="frame" x="0.0" y="165" width="372.66666666666669" height="25"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="pageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="currentPageIndicatorTintColor" red="0.29803922770000002" green="0.61960786580000005" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </pageControl>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aw0-8L-j0k" customClass="addTrainingView" customModule="TrainingApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="260" width="372.66666666666669" height="55"/>
+                                        <rect key="frame" x="0.0" y="195" width="372.66666666666669" height="55"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new training" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyn-8c-3jF">
                                                 <rect key="frame" x="90" y="6" width="107" height="40.666666666666664"/>
@@ -849,7 +849,7 @@
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hXj-bB-epO">
-                                        <rect key="frame" x="0.0" y="265" width="372.66666666666669" height="422"/>
+                                        <rect key="frame" x="0.0" y="200" width="372.66666666666669" height="487"/>
                                         <color key="backgroundColor" red="0.039215687659999998" green="0.043137259779999999" blue="0.047058824450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrainingCell" rowHeight="58" id="mRi-eF-1cB" customClass="TrainingCell" customModule="TrainingApp" customModuleProvider="target">
@@ -991,6 +991,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNm-Vp-EKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="16" y="1026"/>
+        </scene>
+        <!--Training-->
+        <scene sceneID="AeR-Wd-FL9">
+            <objects>
+                <viewController id="uk1-xw-fb7" customClass="TrainingScreen" customModule="TrainingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yI4-ns-gED">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbP-kY-ToO">
+                                <rect key="frame" x="30" y="156.33333333333337" width="354" height="133.66666666666663"/>
+                                <string key="text">Hi! 
+This is app for training your body
+</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipr-C3-1g5">
+                                <rect key="frame" x="147" y="410" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="4BE-LE-XMM"/>
+                                    <constraint firstAttribute="height" constant="50" id="LC4-GW-spd"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="BEGIN"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="next">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButtonTouched" destination="mRi-eF-1cB" eventType="touchUpInside" id="Gl4-ln-hiY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dma-uG-wSx"/>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.043137254899999998" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Ipr-C3-1g5" firstAttribute="top" secondItem="RbP-kY-ToO" secondAttribute="bottom" constant="120" id="KbY-JH-HX1"/>
+                            <constraint firstAttribute="trailing" secondItem="RbP-kY-ToO" secondAttribute="trailing" constant="30" id="cKs-tV-C7Y"/>
+                            <constraint firstItem="Ipr-C3-1g5" firstAttribute="centerX" secondItem="yI4-ns-gED" secondAttribute="centerX" id="dgP-L0-QCk"/>
+                            <constraint firstItem="dma-uG-wSx" firstAttribute="bottom" secondItem="Ipr-C3-1g5" secondAttribute="bottom" constant="276" id="hfl-Yh-WR1"/>
+                            <constraint firstItem="RbP-kY-ToO" firstAttribute="leading" secondItem="yI4-ns-gED" secondAttribute="leading" constant="30" id="izn-kU-NPp"/>
+                            <constraint firstItem="RbP-kY-ToO" firstAttribute="centerX" secondItem="yI4-ns-gED" secondAttribute="centerX" id="xkQ-Jj-58E"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Training" image="trainingIcon" id="QuD-TE-lyN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggl-7I-QVx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2189.8550724637685" y="319.56521739130437"/>
         </scene>
     </scenes>
     <resources>
