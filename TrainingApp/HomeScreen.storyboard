@@ -993,62 +993,78 @@
             <point key="canvasLocation" x="16" y="1026"/>
         </scene>
         <!--Training-->
-        <scene sceneID="AeR-Wd-FL9">
+        <scene sceneID="R5l-dV-A0g">
             <objects>
-                <viewController id="uk1-xw-fb7" customClass="TrainingScreen" customModule="TrainingApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yI4-ns-gED">
+                <viewController id="CDZ-yO-50j" customClass="TrainingScreen" customModule="TrainingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vob-AK-7U6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbP-kY-ToO">
-                                <rect key="frame" x="30" y="156.33333333333337" width="354" height="133.66666666666663"/>
-                                <string key="text">Hi! 
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NLy-qU-uUs">
+                                <rect key="frame" x="74" y="100" width="266" height="436"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cum-kj-k2G">
+                                        <rect key="frame" x="8" y="8" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="LuX-H9-vM4"/>
+                                        </constraints>
+                                        <string key="text">Hi! 
 This is app for training your body
 </string>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipr-C3-1g5">
-                                <rect key="frame" x="147" y="410" width="120" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="4BE-LE-XMM"/>
-                                    <constraint firstAttribute="height" constant="50" id="LC4-GW-spd"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="BEGIN"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="next">
-                                            <attributes>
-                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="startButtonTouched" destination="mRi-eF-1cB" eventType="touchUpInside" id="Gl4-ln-hiY"/>
-                                </connections>
-                            </button>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEU-kD-VGV">
+                                        <rect key="frame" x="8" y="258" width="250" height="170"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNA-OM-kkM">
+                                                <rect key="frame" x="60" y="100" width="130" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="qnM-16-u26"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="BEGIN"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="START">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.062745098040000002" green="0.070588235289999995" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="PNA-OM-kkM" firstAttribute="leading" secondItem="DEU-kD-VGV" secondAttribute="leading" constant="60" id="8kh-MI-GfT"/>
+                                            <constraint firstAttribute="height" constant="170" id="GEm-7O-wsY"/>
+                                            <constraint firstAttribute="bottom" secondItem="PNA-OM-kkM" secondAttribute="bottom" constant="20" id="Jsr-ji-JD6"/>
+                                            <constraint firstAttribute="trailing" secondItem="PNA-OM-kkM" secondAttribute="trailing" constant="60" id="KAg-EO-Ria"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="dma-uG-wSx"/>
+                        <viewLayoutGuide key="safeArea" id="zdc-XY-nLU"/>
                         <color key="backgroundColor" red="0.039215686270000001" green="0.043137254899999998" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Ipr-C3-1g5" firstAttribute="top" secondItem="RbP-kY-ToO" secondAttribute="bottom" constant="120" id="KbY-JH-HX1"/>
-                            <constraint firstAttribute="trailing" secondItem="RbP-kY-ToO" secondAttribute="trailing" constant="30" id="cKs-tV-C7Y"/>
-                            <constraint firstItem="Ipr-C3-1g5" firstAttribute="centerX" secondItem="yI4-ns-gED" secondAttribute="centerX" id="dgP-L0-QCk"/>
-                            <constraint firstItem="dma-uG-wSx" firstAttribute="bottom" secondItem="Ipr-C3-1g5" secondAttribute="bottom" constant="276" id="hfl-Yh-WR1"/>
-                            <constraint firstItem="RbP-kY-ToO" firstAttribute="leading" secondItem="yI4-ns-gED" secondAttribute="leading" constant="30" id="izn-kU-NPp"/>
-                            <constraint firstItem="RbP-kY-ToO" firstAttribute="centerX" secondItem="yI4-ns-gED" secondAttribute="centerX" id="xkQ-Jj-58E"/>
+                            <constraint firstItem="NLy-qU-uUs" firstAttribute="top" secondItem="zdc-XY-nLU" secondAttribute="top" constant="100" id="59Z-im-Lla"/>
+                            <constraint firstItem="NLy-qU-uUs" firstAttribute="centerX" secondItem="vob-AK-7U6" secondAttribute="centerX" id="IyO-M0-8m3"/>
+                            <constraint firstItem="NLy-qU-uUs" firstAttribute="bottom" secondItem="zdc-XY-nLU" secondAttribute="bottom" constant="-200" id="ewE-GU-6IU"/>
+                            <constraint firstItem="NLy-qU-uUs" firstAttribute="leading" secondItem="zdc-XY-nLU" secondAttribute="leading" constant="74" id="sOZ-eX-9HQ"/>
+                            <constraint firstItem="zdc-XY-nLU" firstAttribute="trailing" secondItem="NLy-qU-uUs" secondAttribute="trailing" constant="74" id="tmi-MJ-ckr"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Training" image="trainingIcon" id="QuD-TE-lyN"/>
+                    <tabBarItem key="tabBarItem" title="Training" image="trainingIcon" id="1aP-wT-80K"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ggl-7I-QVx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cbb-GJ-VNV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2189.8550724637685" y="319.56521739130437"/>
+            <point key="canvasLocation" x="2298.5507246376815" y="319.56521739130437"/>
         </scene>
     </scenes>
     <resources>
