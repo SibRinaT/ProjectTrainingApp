@@ -688,19 +688,8 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="J4R-tc-9OB"/>
                     <connections>
-                        <outletCollection property="daysCirles" destination="jBt-hD-duC" collectionClass="NSMutableArray" id="qGK-hg-mds"/>
-                        <outletCollection property="daysCirles" destination="4lB-2n-sbi" collectionClass="NSMutableArray" id="TJs-MJ-94C"/>
                         <outletCollection property="challengeButton" destination="rEp-8J-foH" collectionClass="NSMutableArray" id="1QD-1l-Lvu"/>
                         <outletCollection property="weightHeighButton" destination="yMU-1l-2A0" collectionClass="NSMutableArray" id="26S-Jt-qFH"/>
-                        <outletCollection property="calendarView" destination="Cvl-z0-1cg" collectionClass="NSMutableArray" id="BGP-VB-Ffp"/>
-                        <outletCollection property="daysCirles" destination="Xf3-lP-oAy" collectionClass="NSMutableArray" id="IzK-DV-rWm"/>
-                        <outletCollection property="daysCirles" destination="Pjc-Gp-yfR" collectionClass="NSMutableArray" id="ofT-WN-kpq"/>
-                        <outletCollection property="weightHeightView" destination="GX9-73-5AY" collectionClass="NSMutableArray" id="FLz-7C-Sge"/>
-                        <outletCollection property="daysCirles" destination="Lan-6K-YCn" collectionClass="NSMutableArray" id="iUb-3r-hpw"/>
-                        <outletCollection property="challengeView" destination="0sM-TS-3fn" collectionClass="NSMutableArray" id="zMW-32-wRS"/>
-                        <outletCollection property="daysCirles" destination="7Lo-Ch-bvO" collectionClass="NSMutableArray" id="Res-uM-61r"/>
-                        <outletCollection property="daysCirles" destination="NBc-0i-Akg" collectionClass="NSMutableArray" id="hNI-pA-8LW"/>
-                        <outletCollection property="graphicView" destination="PTi-3G-9SU" collectionClass="NSMutableArray" id="UVZ-3k-LiO"/>
                         <outletCollection property="daysIcons" destination="5iM-qy-hPg" collectionClass="NSMutableArray" id="cIj-Qa-H4M"/>
                         <outletCollection property="daysIcons" destination="8Of-nm-1AB" collectionClass="NSMutableArray" id="r1A-yn-ocD"/>
                         <outletCollection property="daysIcons" destination="xTG-l0-Zhd" collectionClass="NSMutableArray" id="WSD-Nb-SGp"/>
@@ -715,6 +704,18 @@
                         <outletCollection property="daysLabels" destination="OwA-6W-btX" collectionClass="NSMutableArray" id="3tt-lM-ZiA"/>
                         <outletCollection property="daysLabels" destination="pTj-mg-tHb" collectionClass="NSMutableArray" id="Xsh-ip-Tib"/>
                         <outletCollection property="daysLabels" destination="GUJ-8Z-cKR" collectionClass="NSMutableArray" id="dCd-jb-GOx"/>
+                        <outletCollection property="collectionViews" destination="PTi-3G-9SU" collectionClass="NSMutableArray" id="2ti-es-XfS"/>
+                        <outletCollection property="collectionViews" destination="0sM-TS-3fn" collectionClass="NSMutableArray" id="qSd-sC-cTO"/>
+                        <outletCollection property="collectionViews" destination="GX9-73-5AY" collectionClass="NSMutableArray" id="gPS-sb-fLj"/>
+                        <outletCollection property="collectionViews" destination="Cvl-z0-1cg" collectionClass="NSMutableArray" id="16v-Y1-Xxl"/>
+                        <outletCollection property="daysCircles" destination="Xf3-lP-oAy" collectionClass="NSMutableArray" id="oSh-m1-sMr"/>
+                        <outletCollection property="daysCircles" destination="NBc-0i-Akg" collectionClass="NSMutableArray" id="8Kd-7d-Zn7"/>
+                        <outletCollection property="daysCircles" destination="jBt-hD-duC" collectionClass="NSMutableArray" id="pde-Zd-tnB"/>
+                        <outletCollection property="daysCircles" destination="7Lo-Ch-bvO" collectionClass="NSMutableArray" id="hBz-62-srC"/>
+                        <outletCollection property="daysCircles" destination="Pjc-Gp-yfR" collectionClass="NSMutableArray" id="SAO-7Z-RAw"/>
+                        <outletCollection property="daysCircles" destination="Pjc-Gp-yfR" collectionClass="NSMutableArray" id="QbW-wN-CTC"/>
+                        <outletCollection property="daysCircles" destination="Lan-6K-YCn" collectionClass="NSMutableArray" id="9ud-7I-VAR"/>
+                        <outletCollection property="daysCircles" destination="4lB-2n-sbi" collectionClass="NSMutableArray" id="bRS-E7-Ntv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
