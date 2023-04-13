@@ -12,6 +12,7 @@ class TrainingScreen: UIViewController {
     @IBOutlet private var collectionView: UICollectionView!
     @IBOutlet private var pageControl: UIPageControl!
     @IBOutlet private var addTrainingView: UIView!
+    
 
     var tableViewData = [TrainingCellViewModel]()
     var filteredTableViewData = [TrainingCellViewModel]()
@@ -19,6 +20,7 @@ class TrainingScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -44,7 +46,6 @@ class TrainingScreen: UIViewController {
         tableViewData.append(model6)
         
         let model7 = TrainingCellViewModel(title: "Arm ", imageName: "armMuscle", level: .advanced)
-        
         tableViewData.append(model7)
 
         levelData.append(LevelCellViewModel(imageName: "beginnerSplashImage", title: "Beginner", subtitle: "Light exercise. Ideal for beginner athletes", level: .beginner))
