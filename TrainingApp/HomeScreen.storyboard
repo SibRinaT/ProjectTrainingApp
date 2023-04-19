@@ -810,13 +810,13 @@
                                         </cells>
                                     </collectionView>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="LVW-Uz-QMd" customClass="PageControlLevel" customModule="TrainingApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="165" width="372.66666666666669" height="25"/>
+                                        <rect key="frame" x="0.0" y="165" width="372.66666666666669" height="282"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="pageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="currentPageIndicatorTintColor" red="0.29803922770000002" green="0.61960786580000005" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </pageControl>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aw0-8L-j0k" customClass="addTrainingView" customModule="TrainingApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="200" width="372.66666666666669" height="55"/>
+                                        <rect key="frame" x="0.0" y="457" width="372.66666666666669" height="55"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new training" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyn-8c-3jF">
                                                 <rect key="frame" x="90" y="6" width="107" height="40.666666666666664"/>
@@ -850,7 +850,7 @@
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hXj-bB-epO">
-                                        <rect key="frame" x="0.0" y="265" width="372.66666666666669" height="422"/>
+                                        <rect key="frame" x="0.0" y="522" width="372.66666666666669" height="165"/>
                                         <color key="backgroundColor" red="0.039215687659999998" green="0.043137259779999999" blue="0.047058824450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrainingCell" rowHeight="58" id="mRi-eF-1cB" customClass="TrainingCell" customModule="TrainingApp" customModuleProvider="target">
@@ -1055,17 +1055,22 @@ This is app for training your body
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="jAy-d4-0ta">
                                                 <rect key="frame" x="-3" y="0.0" width="320" height="99"/>
                                             </datePicker>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kT6-4n-20X">
-                                                <rect key="frame" x="225" y="95" width="24" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kT6-4n-20X">
+                                                <rect key="frame" x="240" y="95" width="24" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="FZ8-6r-gkd"/>
+                                                    <constraint firstAttribute="height" constant="34" id="qWf-wD-Fmv"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="">
                                                     <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niZ-wI-j0l">
-                                                <rect key="frame" x="65" y="95" width="24" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niZ-wI-j0l">
+                                                <rect key="frame" x="50" y="95" width="24" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="Rkf-4a-53w"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="">
                                                     <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1077,6 +1082,10 @@ This is app for training your body
                                             <constraint firstItem="jAy-d4-0ta" firstAttribute="centerX" secondItem="d2G-NS-xhO" secondAttribute="centerX" id="4fm-p5-eUY"/>
                                             <constraint firstAttribute="bottom" secondItem="BUm-6C-vDL" secondAttribute="bottom" constant="50" id="61F-X3-DVs"/>
                                             <constraint firstAttribute="height" constant="179" id="Amc-DB-TFp"/>
+                                            <constraint firstItem="niZ-wI-j0l" firstAttribute="leading" secondItem="d2G-NS-xhO" secondAttribute="leading" constant="50" id="FhS-99-Wlb"/>
+                                            <constraint firstAttribute="bottom" secondItem="kT6-4n-20X" secondAttribute="bottom" constant="50" id="G88-Bv-vHt"/>
+                                            <constraint firstAttribute="bottom" secondItem="niZ-wI-j0l" secondAttribute="bottom" constant="50" id="GQp-Mc-JMx"/>
+                                            <constraint firstAttribute="trailing" secondItem="kT6-4n-20X" secondAttribute="trailing" constant="50" id="HSC-Lf-Mzh"/>
                                             <constraint firstAttribute="bottom" secondItem="jAy-d4-0ta" secondAttribute="bottom" constant="80" id="ZlD-Gf-NWN"/>
                                             <constraint firstItem="jAy-d4-0ta" firstAttribute="top" secondItem="d2G-NS-xhO" secondAttribute="top" id="gBG-1S-Ytg"/>
                                             <constraint firstItem="BUm-6C-vDL" firstAttribute="centerX" secondItem="d2G-NS-xhO" secondAttribute="centerX" id="gRY-CY-jLm"/>
