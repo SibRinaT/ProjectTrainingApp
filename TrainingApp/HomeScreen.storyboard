@@ -1002,11 +1002,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M2l-Zp-hGf">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="M2l-Zp-hGf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4W1-6P-1ox">
-                                        <rect key="frame" x="30" y="16" width="354" height="305"/>
+                                        <rect key="frame" x="50" y="16" width="314" height="166"/>
                                         <string key="text">Hi! 
 This is app for training your body
 </string>
@@ -1015,60 +1015,94 @@ This is app for training your body
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your age" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPg-jb-Ztc">
-                                        <rect key="frame" x="30" y="321" width="354" height="50"/>
+                                        <rect key="frame" x="50" y="212" width="314" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="ku1-n9-Fuk"/>
+                                            <constraint firstAttribute="height" constant="30" id="ku1-n9-Fuk"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your weight" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XR-lu-J3V">
-                                        <rect key="frame" x="30" y="371" width="354" height="50"/>
+                                        <rect key="frame" x="50" y="272" width="314" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Qlv-J5-lA6"/>
+                                            <constraint firstAttribute="height" constant="30" id="Qlv-J5-lA6"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your height" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucl-4O-VFK">
-                                        <rect key="frame" x="30" y="421" width="354" height="50"/>
+                                        <rect key="frame" x="50" y="332" width="314" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="6qL-wK-219"/>
+                                            <constraint firstAttribute="height" constant="30" id="6qL-wK-219"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2G-NS-xhO">
-                                        <rect key="frame" x="30" y="471" width="354" height="200"/>
+                                        <rect key="frame" x="50" y="392" width="314" height="179"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BUm-6C-vDL">
-                                                <rect key="frame" x="30" y="106" width="294" height="34"/>
+                                                <rect key="frame" x="97" y="95" width="120" height="34"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="294" id="E0p-4Z-wU7"/>
+                                                    <constraint firstAttribute="width" constant="120" id="Fsa-ca-I2G"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jAy-d4-0ta">
-                                                <rect key="frame" x="17" y="0.0" width="320" height="140"/>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="jAy-d4-0ta">
+                                                <rect key="frame" x="-3" y="0.0" width="320" height="99"/>
                                             </datePicker>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kT6-4n-20X">
+                                                <rect key="frame" x="225" y="95" width="24" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="">
+                                                    <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niZ-wI-j0l">
+                                                <rect key="frame" x="65" y="95" width="24" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="">
+                                                    <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.062745098040000002" green="0.070588235289999995" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="BUm-6C-vDL" secondAttribute="bottom" constant="60" id="61F-X3-DVs"/>
-                                            <constraint firstAttribute="height" constant="200" id="Amc-DB-TFp"/>
-                                            <constraint firstAttribute="trailing" secondItem="BUm-6C-vDL" secondAttribute="trailing" constant="30" id="Llz-SJ-c8z"/>
-                                            <constraint firstItem="BUm-6C-vDL" firstAttribute="leading" secondItem="d2G-NS-xhO" secondAttribute="leading" constant="30" id="Rtf-ZY-kmT"/>
-                                            <constraint firstItem="jAy-d4-0ta" firstAttribute="centerX" secondItem="d2G-NS-xhO" secondAttribute="centerX" id="Tkr-v5-7fq"/>
+                                            <constraint firstItem="jAy-d4-0ta" firstAttribute="centerX" secondItem="d2G-NS-xhO" secondAttribute="centerX" id="4fm-p5-eUY"/>
+                                            <constraint firstAttribute="bottom" secondItem="BUm-6C-vDL" secondAttribute="bottom" constant="50" id="61F-X3-DVs"/>
+                                            <constraint firstAttribute="height" constant="179" id="Amc-DB-TFp"/>
+                                            <constraint firstAttribute="bottom" secondItem="jAy-d4-0ta" secondAttribute="bottom" constant="80" id="ZlD-Gf-NWN"/>
                                             <constraint firstItem="jAy-d4-0ta" firstAttribute="top" secondItem="d2G-NS-xhO" secondAttribute="top" id="gBG-1S-Ytg"/>
-                                            <constraint firstAttribute="bottom" secondItem="jAy-d4-0ta" secondAttribute="bottom" constant="60" id="nop-UE-91w"/>
+                                            <constraint firstItem="BUm-6C-vDL" firstAttribute="centerX" secondItem="d2G-NS-xhO" secondAttribute="centerX" id="gRY-CY-jLm"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbb-2X-a5l">
+                                        <rect key="frame" x="50" y="601" width="314" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="gEV-OY-V0k"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="BEGIN"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="next">
+                                                    <attributes>
+                                                        <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
-                                <edgeInsets key="layoutMargins" top="16" left="30" bottom="16" right="30"/>
+                                <edgeInsets key="layoutMargins" top="16" left="50" bottom="16" right="50"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VvK-4B-kkm"/>
