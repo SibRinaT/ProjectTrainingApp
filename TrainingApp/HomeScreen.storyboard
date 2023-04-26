@@ -997,7 +997,7 @@
         <!--hello-->
         <scene sceneID="Fnn-sU-Blq">
             <objects>
-                <viewController id="ame-8A-JH2" sceneMemberID="viewController">
+                <viewController id="ame-8A-JH2" customClass="PersonalDetailsScreen" customModule="TrainingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kW9-w4-29B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1005,96 +1005,115 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="M2l-Zp-hGf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4W1-6P-1ox">
-                                        <rect key="frame" x="40" y="16" width="334" height="166"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4W1-6P-1ox">
+                                        <rect key="frame" x="40" y="16" width="334" height="0.0"/>
                                         <string key="text">Hi! 
 This is app for training your body
 </string>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your age" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPg-jb-Ztc">
-                                        <rect key="frame" x="40" y="212" width="334" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Please enter your weight" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XR-lu-J3V">
+                                        <rect key="frame" x="40" y="46" width="334" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="ku1-n9-Fuk"/>
+                                            <constraint firstAttribute="height" constant="20" id="Qlv-J5-lA6"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your weight" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XR-lu-J3V">
-                                        <rect key="frame" x="40" y="272" width="334" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="Qlv-J5-lA6"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your height" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucl-4O-VFK">
-                                        <rect key="frame" x="40" y="332" width="334" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="6qL-wK-219"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2G-NS-xhO">
-                                        <rect key="frame" x="40" y="392" width="334" height="179"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1ho-qR-OI6">
+                                        <rect key="frame" x="40" y="96" width="334" height="41"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BUm-6C-vDL">
-                                                <rect key="frame" x="107" y="95" width="120" height="34"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My weight (kg):" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQp-c8-dN7">
+                                                <rect key="frame" x="50" y="8" width="234" height="25"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="120" id="Fsa-ca-I2G"/>
+                                                    <constraint firstAttribute="height" constant="25" id="q4A-Cz-kJe"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="jAy-d4-0ta">
-                                                <rect key="frame" x="7" y="0.0" width="320" height="99"/>
-                                            </datePicker>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kT6-4n-20X">
-                                                <rect key="frame" x="260" y="95" width="24" height="34"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B0W-8x-3Qd">
+                                                <rect key="frame" x="50" y="33" width="234" height="0.0"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="24" id="FZ8-6r-gkd"/>
-                                                    <constraint firstAttribute="height" constant="34" id="qWf-wD-Fmv"/>
+                                                    <constraint firstAttribute="height" constant="75" id="ei3-p4-wHQ"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="">
-                                                    <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niZ-wI-j0l">
-                                                <rect key="frame" x="50" y="95" width="24" height="34"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="Rkf-4a-53w"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="">
-                                                    <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </buttonConfiguration>
-                                            </button>
+                                            </pickerView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.062745098040000002" green="0.070588235289999995" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="50" bottom="8" right="50"/>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Please enter your age" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPg-jb-Ztc">
+                                        <rect key="frame" x="40" y="167" width="334" height="20"/>
                                         <constraints>
-                                            <constraint firstItem="jAy-d4-0ta" firstAttribute="centerX" secondItem="d2G-NS-xhO" secondAttribute="centerX" id="4fm-p5-eUY"/>
-                                            <constraint firstAttribute="bottom" secondItem="BUm-6C-vDL" secondAttribute="bottom" constant="50" id="61F-X3-DVs"/>
-                                            <constraint firstAttribute="height" constant="179" id="Amc-DB-TFp"/>
-                                            <constraint firstItem="niZ-wI-j0l" firstAttribute="leading" secondItem="d2G-NS-xhO" secondAttribute="leading" constant="50" id="FhS-99-Wlb"/>
-                                            <constraint firstAttribute="bottom" secondItem="kT6-4n-20X" secondAttribute="bottom" constant="50" id="G88-Bv-vHt"/>
-                                            <constraint firstAttribute="bottom" secondItem="niZ-wI-j0l" secondAttribute="bottom" constant="50" id="GQp-Mc-JMx"/>
-                                            <constraint firstAttribute="trailing" secondItem="kT6-4n-20X" secondAttribute="trailing" constant="50" id="HSC-Lf-Mzh"/>
-                                            <constraint firstAttribute="bottom" secondItem="jAy-d4-0ta" secondAttribute="bottom" constant="80" id="ZlD-Gf-NWN"/>
-                                            <constraint firstItem="jAy-d4-0ta" firstAttribute="top" secondItem="d2G-NS-xhO" secondAttribute="top" id="gBG-1S-Ytg"/>
-                                            <constraint firstItem="BUm-6C-vDL" firstAttribute="centerX" secondItem="d2G-NS-xhO" secondAttribute="centerX" id="gRY-CY-jLm"/>
+                                            <constraint firstAttribute="height" constant="20" id="ku1-n9-Fuk"/>
                                         </constraints>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbb-2X-a5l">
-                                        <rect key="frame" x="40" y="601" width="334" height="70"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bdp-6K-VBv">
+                                        <rect key="frame" x="40" y="217" width="334" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOh-AU-BVr">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="eEg-93-1LI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8d-0a-4vS">
+                                                <rect key="frame" x="0.0" y="30" width="334" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="fv8-P5-1Hz"/>
+                                                </constraints>
+                                                <date key="date" timeIntervalSinceReferenceDate="694245748.32786703">
+                                                    <!--2023-01-01 06:02:28 +0000-->
+                                                </date>
+                                            </datePicker>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.062745098040000002" green="0.070588235289999995" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Please enter your height" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucl-4O-VFK">
+                                        <rect key="frame" x="40" y="397" width="334" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="gEV-OY-V0k"/>
+                                            <constraint firstAttribute="height" constant="20" id="6qL-wK-219"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dJw-li-P11">
+                                        <rect key="frame" x="40" y="447" width="334" height="143"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My height (cm):" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpL-gY-Lfa">
+                                                <rect key="frame" x="50" y="8" width="234" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="X6c-Bp-v14"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f1h-ys-0FP">
+                                                <rect key="frame" x="50" y="33" width="234" height="102"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="Tcy-zN-fYg"/>
+                                                </constraints>
+                                            </pickerView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.062745098040000002" green="0.070588235289999995" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="50" bottom="8" right="50"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vD3-0z-WVS">
+                                        <rect key="frame" x="40" y="620" width="334" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="xAW-oY-B6E"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="BEGIN"/>
@@ -1102,7 +1121,8 @@ This is app for training your body
                                             <attributedString key="attributedTitle">
                                                 <fragment content="next">
                                                     <attributes>
-                                                        <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <font key="NSFont" size="25" name="Helvetica-Bold"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -1124,6 +1144,14 @@ This is app for training your body
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="hello" image="chart.bar.doc.horizontal.fill" catalog="system" id="XOy-ZU-xXD"/>
+                    <connections>
+                        <outlet property="datePickerView" destination="n8d-0a-4vS" id="371-hu-8fN"/>
+                        <outlet property="dateStackView" destination="Bdp-6K-VBv" id="VaK-dr-vs2"/>
+                        <outlet property="heightPickerView" destination="f1h-ys-0FP" id="9J1-kG-lZi"/>
+                        <outlet property="heightStackView" destination="dJw-li-P11" id="Nvr-3W-L5i"/>
+                        <outlet property="wightPickerView" destination="B0W-8x-3Qd" id="Nyk-S3-ohZ"/>
+                        <outlet property="wightStackView" destination="1ho-qR-OI6" id="z8a-Eu-DW3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="erT-qi-MDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

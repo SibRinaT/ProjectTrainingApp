@@ -14,6 +14,7 @@
 		2E32DF75292277B60018E44C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32DF74292277B60018E44C /* HomeScreen.swift */; };
 		2E32DF78292277B60018E44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E32DF76292277B60018E44C /* Main.storyboard */; };
 		2E32DF7D292277B70018E44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E32DF7B292277B70018E44C /* LaunchScreen.storyboard */; };
+		2E3F593529F8E841007E389A /* PersonalDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F593429F8E841007E389A /* PersonalDetailsScreen.swift */; };
 		2E44374F29D35BA1000A1174 /* PageControlLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E44374E29D35BA1000A1174 /* PageControlLevel.swift */; };
 		2E4BF81529C4B7D5003BFA8B /* LevelCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BF81429C4B7D5003BFA8B /* LevelCollectionCell.swift */; };
 		2E4BF81729C4BC72003BFA8B /* LevelCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BF81629C4BC72003BFA8B /* LevelCellViewModel.swift */; };
@@ -33,6 +34,7 @@
 		2E32DF77292277B60018E44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E32DF7C292277B70018E44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E32DF7E292277B70018E44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E3F593429F8E841007E389A /* PersonalDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsScreen.swift; sourceTree = "<group>"; };
 		2E44374E29D35BA1000A1174 /* PageControlLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlLevel.swift; sourceTree = "<group>"; };
 		2E4BF81429C4B7D5003BFA8B /* LevelCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCollectionCell.swift; sourceTree = "<group>"; };
 		2E4BF81629C4BC72003BFA8B /* LevelCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCellViewModel.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				2E32DF70292277B60018E44C /* AppDelegate.swift */,
 				2E32DF72292277B60018E44C /* SceneDelegate.swift */,
 				2E32DF74292277B60018E44C /* HomeScreen.swift */,
+				2E3F593429F8E841007E389A /* PersonalDetailsScreen.swift */,
 				2EC52619292E991E00CCD801 /* HomeScreen.storyboard */,
 				2E32DF76292277B60018E44C /* Main.storyboard */,
 				2E32DF7B292277B70018E44C /* LaunchScreen.storyboard */,
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3F593529F8E841007E389A /* PersonalDetailsScreen.swift in Sources */,
 				2E4BF81529C4B7D5003BFA8B /* LevelCollectionCell.swift in Sources */,
 				2E44374F29D35BA1000A1174 /* PageControlLevel.swift in Sources */,
 				2E2BB1F32994B38600B553F9 /* ArmTrainingScreen.swift in Sources */,
