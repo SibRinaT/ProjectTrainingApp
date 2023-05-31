@@ -54,7 +54,7 @@ class TrainingScreen: UIViewController {
         
         levelData.append(LevelCellViewModel(imageName: "advancedSplashImage", title: "Advanced", subtitle: "Аdvanced exercises. Ideal for already experienced athletes", level: .advanced))
         
-        levelData.append(LevelCellViewModel(imageName: "mytrainingSplashImage", title: "My traing", subtitle: "This is an ideal place for those who are ready to do their own set of exercises", level: .mytraining))
+        levelData.append(LevelCellViewModel(imageName: "mytrainingSplashImage", title: "My training", subtitle: "This is an ideal place for those who are ready to do their own set of exercises", level: .mytraining))
    
         filteredTableViewData = tableViewData.filter{ $0.level == .beginner }
         tableView.reloadData()
