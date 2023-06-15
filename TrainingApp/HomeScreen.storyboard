@@ -830,12 +830,12 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4B-h7-psl">
                                                 <rect key="frame" x="202" y="6" width="43.666666666666657" height="43.666666666666664"/>
-                                                <color key="backgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43.5" id="W3j-i8-xnK"/>
                                                     <constraint firstAttribute="width" secondItem="W4B-h7-psl" secondAttribute="height" multiplier="1:1" id="aOz-pV-HoS"/>
                                                 </constraints>
-                                                <color key="tintColor" red="0.29803922770000002" green="0.61960786580000005" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="+" subtitle="">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="32"/>
                                                     <color key="baseBackgroundColor" red="0.29803921570000003" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -906,9 +906,11 @@
                                                                 </label>
                                                             </subviews>
                                                             <color key="backgroundColor" red="0.062745098039215685" green="0.070588235294117646" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <edgeInsets key="layoutMargins" top="5" left="10" bottom="5" right="10"/>
                                                         </stackView>
                                                     </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="EYP-S7-aIw" secondAttribute="trailing" id="1Co-uF-c9N"/>
                                                         <constraint firstItem="EYP-S7-aIw" firstAttribute="top" secondItem="Msn-DF-OFh" secondAttribute="top" id="HLe-Q3-Gaw"/>
@@ -916,6 +918,7 @@
                                                         <constraint firstItem="EYP-S7-aIw" firstAttribute="leading" secondItem="Msn-DF-OFh" secondAttribute="leading" id="oHl-bX-xBn"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
                                                     <outlet property="iconImageView" destination="lpM-Og-pQt" id="11c-tS-G3d"/>
                                                     <outlet property="titleLabel" destination="URf-wV-n6X" id="5K8-C9-whj"/>
@@ -941,11 +944,12 @@
                         <outlet property="collectionView" destination="591-Ud-4X1" id="H0K-Wo-rFg"/>
                         <outlet property="pageControl" destination="LVW-Uz-QMd" id="91y-aF-IUC"/>
                         <outlet property="tableView" destination="hXj-bB-epO" id="EBM-wD-SUe"/>
+                        <outletCollection property="addTrainingButton" destination="W4B-h7-psl" collectionClass="NSMutableArray" id="aOH-Wu-1H8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ey-Wd-bYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1211.5942028985507" y="320.38043478260875"/>
+            <point key="canvasLocation" x="1212" y="522"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ll5-Zc-iRA">
@@ -1204,7 +1208,7 @@ This is app for training your body
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="erT-qi-MDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1211.5942028985507" y="1206.521739130435"/>
+            <point key="canvasLocation" x="-1025" y="65"/>
         </scene>
         <!--hello-->
         <scene sceneID="aS5-d0-aql">
@@ -1302,7 +1306,7 @@ This is app for training your body
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dpD-iC-7kX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1976.8115942028987" y="319.56521739130437"/>
+            <point key="canvasLocation" x="2371" y="45"/>
         </scene>
     </scenes>
     <resources>

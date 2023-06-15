@@ -12,11 +12,12 @@ class TrainingScreen: UIViewController {
     @IBOutlet private var collectionView: UICollectionView!
     @IBOutlet private var pageControl: UIPageControl!
     @IBOutlet private var addTrainingView: UIView!
-    
+    @IBOutlet var addTrainingButton: [UIButton]!
 
     var tableViewData = [TrainingCellViewModel]()
     var filteredTableViewData = [TrainingCellViewModel]()
     var levelData = [LevelCellViewModel]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +66,12 @@ class TrainingScreen: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        for sides in addTrainingButton {
+            sides.layer.cornerRadius = sides.frame.size.width / 2
+        }
+        
+   
+        
     }
 }
 
@@ -82,6 +89,9 @@ extension TrainingScreen: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TrainingCell", for: indexPath) as! TrainingCell
         let model = filteredTableViewData[indexPath.row]
         cell.configure(with: model)
+        
+        cell.contentView.layer.cornerRadius = 5
+        cell.contentView.layer.masksToBounds = true
         return cell
     }
 }
